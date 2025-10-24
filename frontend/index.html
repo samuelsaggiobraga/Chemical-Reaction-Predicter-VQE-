@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Chemistry Reaction Predictor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0e27;
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        /* Animated background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3), transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(99, 102, 241, 0.3), transparent 50%),
+                radial-gradient(circle at 40% 20%, rgba(139, 92, 246, 0.3), transparent 50%);
+            animation: gradientMove 20s ease infinite;
+            z-index: -1;
+        }
+        
+        @keyframes gradientMove {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(10%, 10%); }
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #667eea 0%, #a78bfa 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -2px;
+            animation: titleGlow 3s ease-in-out infinite;
+        }
+        
+        @keyframes titleGlow {
+            0%, 100% { filter: brightness(1); }
+            50% { filter: brightness(1.2); }
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: rgba(99, 102, 241, 0.2);
+            color: #a78bfa;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 10px;
+            border: 1px solid rgba(167, 139, 250, 0.3);
+        }
+        
+        .periodic-table {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .element {
+            background: rgba(99, 102, 241, 0.1);
+            border: 2px solid rgba(99, 102, 241, 0.3);
+            color: white;
+            padding: 20px 15px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .element::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s;
+        }
+        
+        .element:hover::before {
+            left: 100%;
+        }
+        
+        .element:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(99, 102, 241, 0.4);
+            border-color: rgba(167, 139, 250, 0.6);
+            background: rgba(99, 102, 241, 0.2);
+        }
+        
+        .element.selected {
+            background: linear-gradient(135deg, rgba(236, 72, 153, 0.3), rgba(239, 68, 68, 0.3));
+            border-color: #ec4899;
+            transform: translateY(-8px) scale(1.08);
+            box-shadow: 0 20px 50px rgba(236, 72, 153, 0.5);
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 20px 50px rgba(236, 72, 153, 0.5); }
+            50% { box-shadow: 0 25px 60px rgba(236, 72, 153, 0.7); }
+        }
+        
+        .element-number {
+            position: absolute;
+            top: 8px;
+            right: 10px;
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.4);
+            font-weight: 600;
+        }
+        
+        .element-symbol {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .element-name {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .selected-elements {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(99, 102, 241, 0.3);
+            padding: 25px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            backdrop-filter: blur(10px);
+        }
+        
+        .selected-elements strong {
+            color: #a78bfa;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .selected-elements span {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.3rem;
+            font-weight: 600;
+            font-family: 'JetBrains Mono', monospace;
+            margin: 0 15px;
+            padding: 8px 20px;
+            background: rgba(99, 102, 241, 0.1);
+            border-radius: 10px;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        
+        .predict-btn {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+            color: white;
+            border: none;
+            padding: 18px 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+        }
+        
+        .predict-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .predict-btn:hover::before {
+            left: 100%;
+        }
+        
+        .predict-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 20px 50px rgba(99, 102, 241, 0.6);
+        }
+        
+        .predict-btn:active {
+            transform: translateY(-2px) scale(1.02);
+        }
+        
+        .predict-btn:disabled {
+            background: rgba(255, 255, 255, 0.1);
+            cursor: not-allowed;
+            box-shadow: none;
+            opacity: 0.5;
+        }
+        
+        .predict-btn:disabled:hover {
+            transform: none;
+        }
+        
+        .results {
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(99, 102, 241, 0.2);
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 30px;
+            display: none;
+            animation: slideIn 0.6s ease-out;
+            backdrop-filter: blur(10px);
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .results.show {
+            display: block;
+        }
+        
+        .results h2 {
+            color: #a78bfa;
+            font-size: 2rem;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 60px;
+            display: none;
+        }
+        
+        .loading.show {
+            display: block;
+            animation: fadeIn 0.3s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .spinner {
+            border: 5px solid rgba(255, 255, 255, 0.1);
+            border-top: 5px solid #6366f1;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .loading p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        
+        .quantum-data, .ai-prediction {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            backdrop-filter: blur(5px);
+        }
+        
+        .quantum-data h3, .ai-prediction h3 {
+            color: #a78bfa;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .quantum-data h3::before {
+            content: '⚛️';
+            font-size: 1.5rem;
+        }
+        
+        .ai-prediction h3::before {
+            content: '🤖';
+            font-size: 1.5rem;
+        }
+        
+        .data-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            transition: background 0.3s;
+        }
+        
+        .data-row:hover {
+            background: rgba(99, 102, 241, 0.05);
+        }
+        
+        .data-row span:first-child {
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 500;
+        }
+        
+        .data-row span:last-child {
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 600;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .ai-prediction p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+        
+        .ai-prediction strong {
+            color: #a78bfa;
+            font-weight: 600;
+        }
+        
+        .clear-btn {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(239, 68, 68, 0.3);
+        }
+        
+        .clear-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(239, 68, 68, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚛️ Quantum Reaction Predictor</h1>
+            <p class="subtitle">Predict molecular reactions using quantum computing & AI</p>
+            <div class="badge">VQE + Gemini AI</div>
+        </div>
+        
+        <div class="selected-elements">
+            <div style="flex: 1;">
+                <strong>Selected Elements:</strong>
+                <span id="selected-display">None</span>
+                <div style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.5); margin-top: 8px;">
+                    💡 Left-click to add • Right-click to remove
+                </div>
+            </div>
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <input type="text" id="molecule-input" placeholder="Or type: H2O, CH4, etc." 
+                    style="padding: 10px 15px; border-radius: 8px; border: 2px solid rgba(99, 102, 241, 0.3); 
+                    background: rgba(255, 255, 255, 0.05); color: white; font-size: 1rem; width: 200px;"
+                    onkeypress="if(event.key==='Enter') addMolecule()">
+                <button onclick="addMolecule()" style="padding: 10px 20px; border-radius: 8px; border: none; 
+                    background: linear-gradient(135deg, #10b981, #059669); color: white; font-weight: 600; cursor: pointer;">
+                    Add Molecule
+                </button>
+                <button class="clear-btn" onclick="clearSelection()">Clear</button>
+            </div>
+        </div>
+        
+        <div class="periodic-table" id="periodic-table">
+            <!-- Elements will be inserted here by JavaScript -->
+        </div>
+        
+        <button class="predict-btn" id="predict-btn" onclick="predictReaction()" disabled>
+            Predict Reaction
+        </button>
+        
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p style="margin-top: 20px;" id="loading-text">Running quantum calculations and AI prediction...</p>
+            <p style="margin-top: 10px; font-size: 0.9rem; color: rgba(255, 255, 255, 0.5);" id="loading-time">0s elapsed</p>
+        </div>
+        
+        <div class="results" id="results">
+            <h2>Results</h2>
+            
+            <div class="quantum-data">
+                <h3>Quantum Data (VQE)</h3>
+                <div id="quantum-data-content"></div>
+            </div>
+            
+            <div class="ai-prediction">
+                <h3>AI Prediction (Gemini)</h3>
+                <div id="ai-prediction-content"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="periodic_table.js"></script>
+    <script>
+        const API_URL = 'http://localhost:5001/api';
+        let selectedElements = [];  // Array to store selected element symbols (can have duplicates)
+        let selectedMolecules = [];  // Array to store molecules like [{formula: "H2O"}]
+        
+        const elements = PERIODIC_TABLE;  // Use all 118 elements
+        
+        function initPeriodicTable() {
+            const table = document.getElementById('periodic-table');
+            elements.forEach(elem => {
+                const div = document.createElement('div');
+                div.className = 'element';
+                div.dataset.symbol = elem.symbol;
+                div.innerHTML = `
+                    <div class="element-number">${elem.number}</div>
+                    <div class="element-symbol">${elem.symbol}</div>
+                    <div class="element-name">${elem.name}</div>
+                `;
+                div.onclick = () => toggleElement(elem.symbol);
+                div.oncontextmenu = (e) => {
+                    e.preventDefault();
+                    removeElement(elem.symbol);
+                };
+                table.appendChild(div);
+            });
+        }
+        
+        function toggleElement(symbol) {
+            // Always add the element (allow duplicates)
+            selectedElements.push(symbol);
+            
+            // Visual feedback - highlight element briefly
+            const elemDiv = document.querySelector(`[data-symbol="${symbol}"]`);
+            elemDiv.classList.add('selected');
+            setTimeout(() => {
+                // Check if this element still exists in selection
+                if (selectedElements.filter(e => e === symbol).length === 0) {
+                    elemDiv.classList.remove('selected');
+                }
+            }, 200);
+            
+            updateDisplay();
+        }
+        
+        function removeElement(symbol) {
+            // Remove one instance of the element
+            const idx = selectedElements.indexOf(symbol);
+            if (idx > -1) {
+                selectedElements.splice(idx, 1);
+                
+                // Visual feedback
+                const elemDiv = document.querySelector(`[data-symbol="${symbol}"]`);
+                elemDiv.classList.remove('selected');
+                setTimeout(() => {
+                    if (selectedElements.includes(symbol)) {
+                        elemDiv.classList.add('selected');
+                    }
+                }, 100);
+                
+                updateDisplay();
+            }
+        }
+        
+        function addMolecule() {
+            const input = document.getElementById('molecule-input');
+            const formula = input.value.trim();
+            
+            if (!formula) return;
+            
+            // Validate molecule formula
+            // Pattern: Element symbol (capital + optional lowercase) followed by optional number
+            const pattern = /([A-Z][a-z]?)(\d*)/g;
+            let match;
+            let isValid = false;
+            
+            while ((match = pattern.exec(formula)) !== null) {
+                if (match[1]) {  // If we matched an element symbol
+                    const element = match[1];
+                    
+                    // Check if element exists
+                    if (!elements.find(e => e.symbol === element)) {
+                        alert(`Unknown element: ${element}`);
+                        return;
+                    }
+                    isValid = true;
+                }
+            }
+            
+            if (isValid) {
+                // Add as molecule (not individual elements)
+                selectedMolecules.push({formula: formula});
+                console.log(`Added molecule: ${formula}`);
+                input.value = '';  // Clear input
+                updateDisplay();
+            } else {
+                alert('Invalid molecule formula. Example: H2O, CH4, C6H12O6');
+            }
+        }
+        
+        function clearSelection() {
+            selectedElements = [];
+            selectedMolecules = [];
+            document.querySelectorAll('.element').forEach(e => e.classList.remove('selected'));
+            updateDisplay();
+        }
+        
+        function updateDisplay() {
+            const parts = [];
+            
+            // Add molecules
+            if (selectedMolecules.length > 0) {
+                parts.push(...selectedMolecules.map(m => m.formula));
+            }
+            
+            // Add individual elements
+            if (selectedElements.length > 0) {
+                // Count occurrences of each element
+                const counts = {};
+                selectedElements.forEach(elem => {
+                    counts[elem] = (counts[elem] || 0) + 1;
+                });
+                
+                // Display with counts (e.g., "H₂ + O" or "C + H₄")
+                const display = Object.entries(counts)
+                    .map(([elem, count]) => count > 1 ? `${elem}₂₃₄₅₆₇₈₉`[count-1] ? `${elem}${'₀₁₂₃₄₅₆₇₈₉'[count]}` : `${elem}${count}` : elem)
+                    .join(' + ');
+                
+                // Simpler display
+                const simpleDisplay = Object.entries(counts)
+                    .map(([elem, count]) => count > 1 ? `${elem}(${count})` : elem)
+                    .join(' + ');
+                
+                parts.push(simpleDisplay);
+            }
+            
+            // Display combined
+            if (parts.length > 0) {
+                document.getElementById('selected-display').textContent = parts.join(' + ');
+            } else {
+                document.getElementById('selected-display').textContent = 'None';
+            }
+            
+            document.getElementById('predict-btn').disabled = selectedElements.length === 0 && selectedMolecules.length === 0;
+        }
+        
+        async function predictReaction() {
+            if (selectedElements.length === 0 && selectedMolecules.length === 0) return;
+            
+            console.log('🚀 Starting prediction for:');
+            console.log('  Elements:', selectedElements);
+            console.log('  Molecules:', selectedMolecules);
+            
+            // Show loading
+            document.getElementById('loading').classList.add('show');
+            document.getElementById('results').classList.remove('show');
+            
+            const startTime = Date.now();
+            
+            // Update loading timer
+            const timerInterval = setInterval(() => {
+                const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+                const timeEl = document.getElementById('loading-time');
+                if (timeEl) {
+                    timeEl.textContent = `${elapsed}s elapsed`;
+                }
+            }, 100);
+            
+            try {
+                console.log('📡 Sending request to:', `${API_URL}/predict-reaction`);
+                
+                const response = await fetch(`${API_URL}/predict-reaction`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        elements: selectedElements,
+                        molecules: selectedMolecules
+                    })
+                });
+                
+                console.log('📥 Response status:', response.status);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                console.log('✅ Data received:', data);
+                
+                const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+                console.log(`⏱️ Total time: ${elapsed}s`);
+                
+                if (data.success) {
+                    displayResults(data);
+                } else {
+                    console.error('❌ Server error:', data.error);
+                    alert('Server Error: ' + data.error);
+                }
+            } catch (error) {
+                console.error('❌ Connection error:', error);
+                const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+                alert(`Error after ${elapsed}s: ${error.message}\n\nCheck console (F12) for details.\n\nMake sure the server is running on port 5001.`);
+            } finally {
+                clearInterval(timerInterval);
+                document.getElementById('loading').classList.remove('show');
+            }
+        }
+        
+        function displayResults(data) {
+            // Display quantum data
+            const qd = data.quantum_data;
+            document.getElementById('quantum-data-content').innerHTML = `
+                <div class="data-row"><span>VQE Energy:</span><span>${qd.vqe_energy?.toFixed(6)} Ha</span></div>
+                <div class="data-row"><span>HF Energy:</span><span>${qd.hf_energy?.toFixed(6)} Ha</span></div>
+                <div class="data-row"><span>Energy Improvement:</span><span>${qd.energy_improvement?.toFixed(6)} Ha</span></div>
+                <div class="data-row"><span>Number of Electrons:</span><span>${qd.num_electrons}</span></div>
+                <div class="data-row"><span>Qubits Used:</span><span>${qd.num_qubits}</span></div>
+                <div class="data-row"><span>Bond Lengths:</span><span>${JSON.stringify(qd.bond_lengths)}</span></div>
+            `;
+            
+            // Display AI prediction
+            const ai = data.ai_prediction;
+            
+            // Format products with probabilities
+            let productsHTML = '';
+            if (Array.isArray(ai.products) && ai.products.length > 0) {
+                if (typeof ai.products[0] === 'object' && ai.products[0].probability) {
+                    // New format with probabilities
+                    productsHTML = ai.products.map(p => {
+                        const prob = (p.probability * 100).toFixed(1);
+                        return `
+                            <div style="margin: 8px 0; padding: 10px; background: rgba(99, 102, 241, 0.05); border-radius: 8px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <strong style="font-size: 1.1rem;">${p.formula || p.name}</strong>
+                                    <span style="font-size: 1.2rem; color: #10b981; font-weight: 700;">${prob}%</span>
+                                </div>
+                                <div style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.6); margin-top: 4px;">${p.name || ''}</div>
+                            </div>
+                        `;
+                    }).join('');
+                } else {
+                    // Old format (fallback)
+                    productsHTML = `<span>${ai.products.join(', ')}</span>`;
+                }
+            }
+            
+            document.getElementById('ai-prediction-content').innerHTML = `
+                <div style="margin-bottom: 20px;">
+                    <strong style="font-size: 1.2rem;">Predicted Products:</strong>
+                    ${productsHTML}
+                </div>
+                <p style="margin-top: 15px;"><strong>Mechanism:</strong></p>
+                <p>${ai.mechanism}</p>
+                <p style="margin-top: 15px;"><strong>Thermodynamics:</strong></p>
+                <p>${ai.thermodynamics}</p>
+                <p style="margin-top: 15px;"><strong>Reasoning:</strong></p>
+                <p>${ai.reasoning}</p>
+            `;
+            
+            document.getElementById('results').classList.add('show');
+        }
+        
+        // Initialize on load
+        initPeriodicTable();
+    </script>
+</body>
+</html>
