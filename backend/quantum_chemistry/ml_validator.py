@@ -137,7 +137,7 @@ class ReactionValidator:
         
         return {
             'name': 'mass_balance',
-            'passed': balanced,
+            'passed': bool(balanced),
             'input_atoms': dict(input_counts),
             'output_atoms': dict(output_counts),
             'message': 'Mass balanced' if balanced else 'Mass imbalance detected'
@@ -168,7 +168,7 @@ class ReactionValidator:
             return {
                 'name': 'pattern_matching',
                 'passed': True,
-                'matched': matched,
+                'matched': bool(matched),
                 'expected': expected,
                 'confidence': pattern['confidence'] if matched else 0.5,
                 'message': f"Matches known pattern: {signature} → {expected}" if matched else f"Expected {expected}, got {product_formulas}"
@@ -177,7 +177,7 @@ class ReactionValidator:
         return {
             'name': 'pattern_matching',
             'passed': True,
-            'matched': False,
+            'matched': bool(False),
             'message': 'No known pattern for this reaction'
         }
     
