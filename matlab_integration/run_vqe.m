@@ -125,49 +125,30 @@ function energy = vqe_cost(params, H, num_qubits)
 end
 
 function state = create_ansatz_state(params, num_qubits)
-% Create parameterized quantum state using simplified ansatz
-% Uses RY rotations with minimal entangling
+% Create parameterized quantum state using ultra-simplified ansatz
+% Single layer only for maximum speed
 
-    % Calculate how many parameters we actually have
     available_params = length(params);
     
-    % Determine number of layers based on available parameters
-    num_layers = floor(available_params / num_qubits);
-    if num_layers == 0
-        num_layers = 1;
-        % Pad params if needed
-        if available_params < num_qubits
-            params = [params, zeros(1, num_qubits - available_params)];
-        end
+    % Pad params if needed to match qubits
+    if available_params < num_qubits
+        params = [params, zeros(1, num_qubits - available_params)];
     end
-    num_layers = min(2, num_layers);  % Max 2 layers
     
-    % Only use the parameters we have
-    num_params_to_use = min(num_qubits * num_layers, available_params);
-    param_matrix = reshape(params(1:num_params_to_use), [], num_layers);
-    
-    % Build quantum circuit
+    % Build minimal quantum circuit - single layer only
     gates = [];
     
-    % Get actual number of qubits we have parameters for
-    num_qubits_with_params = size(param_matrix, 1);
-    
-    % Single layer of RY gates + entanglement
-    for q = 1:num_qubits_with_params
-        gates = [gates; ryGate(q, param_matrix(q, 1))];
+    % Just RY rotations, no entanglement for speed
+    for q = 1:min(num_qubits, available_params)
+        gates = [gates; ryGate(q, params(q))];
     end
     
-    % Minimal entanglement - just nearest neighbors
-    if num_qubits > 1
-        for q = 1:2:num_qubits-1  % Only even qubits
-            gates = [gates; cxGate(q, q+1)];
-        end
-    end
-    
-    % Second rotation layer if we have parameters
-    if num_layers > 1 && size(param_matrix, 2) >= 2
-        for q = 1:num_qubits_with_params
-            gates = [gates; ryGate(q, param_matrix(q, 2))];
+    % Minimal entanglement - only if more than 2 qubits
+    if num_qubits > 2
+        % Just one pair of CNOT gates
+        gates = [gates; cxGate(1, 2)];
+        if num_qubits > 3
+            gates = [gates; cxGate(3, 4)];
         end
     end
     

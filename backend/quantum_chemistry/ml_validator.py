@@ -101,7 +101,7 @@ class ReactionValidator:
         
         validation_result = {
             'result': result,
-            'confidence': final_confidence,
+            'confidence': float(final_confidence),
             'checks_passed': f"{passed_checks}/{len(checks)}",
             'warnings': warnings,
             'detailed_checks': checks,

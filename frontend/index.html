@@ -6,778 +6,104 @@
     <title>Quantum Chemistry Reaction Predictor</title>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Crimson Pro', 'Georgia', serif;
-            background: #0d0d0d;
-            color: #c4c4c4;
-            line-height: 1.6;
-            padding: 40px 20px;
-        }
-        
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            background: #1a1a1a;
-            border: 1px solid #2a2a2a;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        
-        /* Header - Academic Style */
-        .header {
-            background: #151515;
-            border-bottom: 3px solid #2a2a2a;
-            padding: 50px 60px;
-            text-align: center;
-        }
-        
-        h1 {
-            font-family: 'Source Serif Pro', serif;
-            font-size: 2.8rem;
-            font-weight: 700;
-            color: #e8e8e8;
-            margin-bottom: 15px;
-            letter-spacing: -0.5px;
-            text-transform: uppercase;
-        }
-        
-        .subtitle {
-            font-size: 1.1rem;
-            color: #8a8a8a;
-            font-weight: 400;
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-        
-        .institution {
-            font-size: 0.9rem;
-            color: #6a6a6a;
-            font-weight: 500;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin-top: 10px;
-            border-top: 1px solid #2a2a2a;
-            padding-top: 15px;
-        }
-        
-        /* Main Content */
-        .content {
-            padding: 50px 60px;
-        }
-        
-        .section-title {
-            font-family: 'Source Serif Pro', serif;
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: #d4d4d4;
-            margin-bottom: 25px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #2a2a2a;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        /* Input Section */
-        .input-section {
-            background: #151515;
-            border: 1px solid #2a2a2a;
-            padding: 35px;
-            margin-bottom: 40px;
-        }
-        
-        .input-group {
-            margin-bottom: 25px;
-        }
-        
-        label {
-            display: block;
-            font-size: 0.95rem;
-            color: #a0a0a0;
-            margin-bottom: 10px;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
-        input[type="text"],
-        select {
-            width: 100%;
-            padding: 12px 15px;
-            background: #0d0d0d;
-            border: 1px solid #2a2a2a;
-            color: #c4c4c4;
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.95rem;
-            transition: border-color 0.2s;
-        }
-        
-        input[type="text"]:focus,
-        select:focus {
-            outline: none;
-            border-color: #4a4a4a;
-        }
-        
-        /* Periodic Table */
-        .periodic-table {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-            gap: 8px;
-            margin: 25px 0;
-            padding: 25px;
-            background: #151515;
-            border: 1px solid #2a2a2a;
-        }
-        
-        .element {
-            background: #1a1a1a;
-            border: 1px solid #2a2a2a;
-            color: #b0b0b0;
-            padding: 15px 10px;
-            cursor: pointer;
-            transition: all 0.2s;
-            text-align: center;
-            position: relative;
-        }
-        
-        .element:hover {
-            background: #202020;
-            border-color: #4a4a4a;
-            color: #d4d4d4;
-        }
-        
-        .element.selected {
-            background: #2a2a2a;
-            border-color: #6a6a6a;
-            color: #e8e8e8;
-        }
-        
-        .element-number {
-            position: absolute;
-            top: 4px;
-            right: 6px;
-            font-size: 9px;
-            color: #5a5a5a;
-            font-family: 'IBM Plex Mono', monospace;
-        }
-        
-        .element-symbol {
-            font-size: 24px;
-            font-weight: 600;
-            font-family: 'IBM Plex Mono', monospace;
-            margin-bottom: 3px;
-        }
-        
-        .element-name {
-            font-size: 9px;
-            color: #7a7a7a;
-            text-transform: uppercase;
-            letter-spacing: 0.3px;
-        }
-        
-        /* Selected Elements Display */
-        .selected-display {
-            background: #0d0d0d;
-            border: 1px solid #2a2a2a;
-            padding: 20px;
-            margin: 25px 0;
-            font-family: 'IBM Plex Mono', monospace;
-        }
-        
-        .selected-display strong {
-            color: #a0a0a0;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .selected-display span {
-            color: #e8e8e8;
-            font-size: 1.1rem;
-            margin-left: 15px;
-        }
-        
-        /* Buttons */
-        .btn {
-            padding: 15px 40px;
-            background: #2a2a2a;
-            border: 1px solid #3a3a3a;
-            color: #d4d4d4;
-            font-family: 'Crimson Pro', serif;
-            font-size: 1rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            cursor: pointer;
-            transition: all 0.2s;
-            margin-right: 15px;
-        }
-        
-        .btn:hover {
-            background: #3a3a3a;
-            border-color: #4a4a4a;
-            color: #e8e8e8;
-        }
-        
-        .btn-primary {
-            background: #1a1a1a;
-            border-color: #4a4a4a;
-            color: #e8e8e8;
-        }
-        
-        .btn-primary:hover {
-            background: #2a2a2a;
-            border-color: #6a6a6a;
-        }
-        
-        /* Results Section */
-        .results-section {
-            background: #151515;
-            border: 1px solid #2a2a2a;
-            padding: 35px;
-            margin-top: 40px;
-            display: none;
-        }
-        
-        .results-section.show {
-            display: block;
-        }
-        
-        .result-item {
-            margin-bottom: 30px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid #2a2a2a;
-        }
-        
-        .result-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-        
-        .result-label {
-            font-size: 0.9rem;
-            color: #8a8a8a;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 10px;
-        }
-        
-        .result-value {
-            font-size: 1.05rem;
-            color: #d4d4d4;
-            font-family: 'IBM Plex Mono', monospace;
-            line-height: 1.8;
-        }
-        
-        /* Product Cards */
-        .product-card {
-            background: #0d0d0d;
-            border: 1px solid #2a2a2a;
-            padding: 20px;
-            margin-bottom: 15px;
-        }
-        
-        .product-formula {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 1.3rem;
-            color: #e8e8e8;
-            margin-bottom: 8px;
-        }
-        
-        .product-name {
-            color: #a0a0a0;
-            font-size: 0.95rem;
-            margin-bottom: 8px;
-        }
-        
-        .product-probability {
-            color: #8a8a8a;
-            font-size: 0.85rem;
-            font-family: 'IBM Plex Mono', monospace;
-        }
-        
-        /* Validation Display */
-        .validation-box {
-            background: #0d0d0d;
-            border-left: 3px solid #4a4a4a;
-            padding: 20px;
-            margin-top: 20px;
-        }
-        
-        .validation-box.correct {
-            border-left-color: #5a7a5a;
-        }
-        
-        .validation-box.warning {
-            border-left-color: #8a7a4a;
-        }
-        
-        .validation-box.error {
-            border-left-color: #8a4a4a;
-        }
-        
-        .validation-status {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.9rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-        }
-        
-        .validation-box.correct .validation-status {
-            color: #7a9a7a;
-        }
-        
-        .validation-box.warning .validation-status {
-            color: #aa9a6a;
-        }
-        
-        .validation-box.error .validation-status {
-            color: #aa6a6a;
-        }
-        
-        .validation-details {
-            font-size: 0.85rem;
-            color: #8a8a8a;
-            line-height: 1.6;
-        }
-        
-        /* Loading State */
-        .loading {
-            text-align: center;
-            padding: 40px;
-            color: #8a8a8a;
-        }
-        
-        .loading-spinner {
-            border: 3px solid #2a2a2a;
-            border-top: 3px solid #6a6a6a;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 20px;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        /* Table Styling */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.9rem;
-        }
-        
-        th {
-            background: #0d0d0d;
-            color: #a0a0a0;
-            padding: 12px;
-            text-align: left;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            border-bottom: 2px solid #2a2a2a;
-        }
-        
-        td {
-            padding: 12px;
-            border-bottom: 1px solid #2a2a2a;
-            color: #c4c4c4;
-        }
-        
-        tr:hover {
-            background: #1a1a1a;
-        }
-        
-        /* Footer */
-        .footer {
-            background: #151515;
-            border-top: 3px solid #2a2a2a;
-            padding: 30px 60px;
-            text-align: center;
-            color: #6a6a6a;
-            font-size: 0.85rem;
-        }
-        
-        .footer-links {
-            margin-top: 15px;
-        }
-        
-        .footer-links a {
-            color: #8a8a8a;
-            text-decoration: none;
-            margin: 0 15px;
-            transition: color 0.2s;
-        }
-        
-        .footer-links a:hover {
-            color: #a0a0a0;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Crimson Pro', 'Georgia', serif; background: #0d0d0d; color: #c4c4c4; line-height: 1.6; padding: 40px 20px; }
+        .container { max-width: 1800px; margin: 0 auto; background: #1a1a1a; border: 1px solid #2a2a2a; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+        .header { background: #151515; border-bottom: 3px solid #2a2a2a; padding: 50px 60px; text-align: center; }
+        h1 { font-family: 'Source Serif Pro', serif; font-size: 2.8rem; font-weight: 700; color: #e8e8e8; margin-bottom: 15px; letter-spacing: -0.5px; text-transform: uppercase; }
+        .subtitle { font-size: 1.1rem; color: #8a8a8a; font-weight: 400; font-style: italic; margin-bottom: 20px; }
+        .institution { font-size: 0.9rem; color: #6a6a6a; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; margin-top: 10px; border-top: 1px solid #2a2a2a; padding-top: 15px; }
+        .content { padding: 50px 60px; }
+        .section-title { font-family: 'Source Serif Pro', serif; font-size: 1.4rem; font-weight: 600; color: #d4d4d4; margin-bottom: 25px; padding-bottom: 10px; border-bottom: 2px solid #2a2a2a; text-transform: uppercase; letter-spacing: 1px; }
+        .input-section { background: #151515; border: 1px solid #2a2a2a; padding: 35px; margin-bottom: 40px; }
+        .periodic-table-container { margin: 30px 0; overflow-x: auto; }
+        .periodic-table { display: grid; grid-template-columns: repeat(18, 65px); gap: 3px; padding: 20px; background: #151515; border: 1px solid #2a2a2a; max-width: fit-content; }
+        .element { background: #1a1a1a; border: 1px solid #2a2a2a; color: #b0b0b0; padding: 6px 3px; cursor: pointer; transition: all 0.2s; text-align: center; position: relative; height: 58px; display: flex; flex-direction: column; justify-content: center; user-select: none; }
+        .element:hover { background: #202020; border-color: #4a4a4a; color: #d4d4d4; transform: translateY(-2px); }
+        .element.selected { background: #2a2a2a; border-color: #6a6a6a; color: #e8e8e8; }
+        .element-count { position: absolute; top: 2px; left: 3px; font-size: 10px; color: #8a8a8a; font-family: 'IBM Plex Mono', monospace; font-weight: 600; background: rgba(0,0,0,0.3); padding: 1px 4px; border-radius: 2px; }
+        .element-number { position: absolute; top: 2px; right: 3px; font-size: 7px; color: #5a5a5a; font-family: 'IBM Plex Mono', monospace; }
+        .element-symbol { font-size: 17px; font-weight: 600; font-family: 'IBM Plex Mono', monospace; margin-bottom: 2px; }
+        .element-name { font-size: 6.5px; color: #7a7a7a; text-transform: uppercase; letter-spacing: 0.2px; }
+        .selected-display { background: #0d0d0d; border: 1px solid #2a2a2a; padding: 20px; margin: 25px 0; font-family: 'IBM Plex Mono', monospace; }
+        .selected-display strong { color: #a0a0a0; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
+        .selected-display span { color: #e8e8e8; font-size: 1.1rem; margin-left: 15px; }
+        .helper-text { font-size: 0.85rem; color: #6a6a6a; margin-top: 15px; font-style: italic; }
+        .btn { padding: 15px 40px; background: #2a2a2a; border: 1px solid #3a3a3a; color: #d4d4d4; font-family: 'Crimson Pro', serif; font-size: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; transition: all 0.2s; margin-right: 15px; }
+        .btn:hover { background: #3a3a3a; border-color: #4a4a4a; color: #e8e8e8; }
+        .btn-primary { background: #1a1a1a; border-color: #4a4a4a; color: #e8e8e8; }
+        .btn-primary:hover { background: #2a2a2a; border-color: #6a6a6a; }
+        .results-section { background: #151515; border: 1px solid #2a2a2a; padding: 35px; margin-top: 40px; display: none; }
+        .results-section.show { display: block; }
+        .result-item { margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #2a2a2a; }
+        .result-item:last-child { border-bottom: none; }
+        .result-label { font-size: 0.9rem; color: #8a8a8a; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+        .result-value { font-size: 1.05rem; color: #d4d4d4; font-family: 'IBM Plex Mono', monospace; line-height: 1.8; }
+        .product-card { background: #0d0d0d; border: 1px solid #2a2a2a; padding: 20px; margin-bottom: 15px; }
+        .product-formula { font-family: 'IBM Plex Mono', monospace; font-size: 1.3rem; color: #e8e8e8; margin-bottom: 8px; }
+        .validation-box { background: #0d0d0d; border-left: 3px solid #4a4a4a; padding: 20px; margin-top: 20px; }
+        .validation-box.correct { border-left-color: #5a7a5a; }
+        .validation-box.warning { border-left-color: #8a7a4a; }
+        .validation-box.error { border-left-color: #8a4a4a; }
+        .loading { text-align: center; padding: 40px; color: #8a8a8a; }
+        .loading-spinner { border: 3px solid #2a2a2a; border-top: 3px solid #6a6a6a; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin: 0 auto 20px; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-family: 'IBM Plex Mono', monospace; font-size: 0.9rem; }
+        th { background: #0d0d0d; color: #a0a0a0; padding: 12px; text-align: left; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid #2a2a2a; }
+        td { padding: 12px; border-bottom: 1px solid #2a2a2a; color: #c4c4c4; }
+        .footer { background: #151515; border-top: 3px solid #2a2a2a; padding: 30px 60px; text-align: center; color: #6a6a6a; font-size: 0.85rem; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { color: #8a8a8a; text-decoration: none; margin: 0 15px; transition: color 0.2s; }
+        .footer-links a:hover { color: #a0a0a0; text-decoration: underline; }
+        .lanthanides, .actinides { margin-top: 15px; padding-top: 15px; border-top: 1px solid #2a2a2a; }
+        .series-label { font-size: 0.75rem; color: #6a6a6a; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; font-family: 'IBM Plex Mono', monospace; }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
         <div class="header">
             <h1>Quantum Chemistry Reaction Predictor</h1>
             <p class="subtitle">A Computational Approach to Molecular Reaction Prediction</p>
             <p class="institution">Variational Quantum Eigensolver • Hartree-Fock Method • AI-Enhanced Analysis</p>
         </div>
-        
-        <!-- Main Content -->
         <div class="content">
-            <!-- Input Section -->
             <div class="section-title">Input Parameters</div>
-            
             <div class="input-section">
-                <div class="input-group">
-                    <label>Input Method</label>
-                    <select id="inputMethod">
-                        <option value="elements">Element Selection</option>
-                        <option value="smiles">SMILES Notation</option>
-                        <option value="formula">Chemical Formula</option>
-                    </select>
+                <div class="periodic-table-container">
+                    <div class="periodic-table" id="periodicTable"></div>
+                    <div class="lanthanides"><div class="series-label">Lanthanides</div><div class="periodic-table" id="lanthanides" style="grid-template-columns: repeat(15, 65px);"></div></div>
+                    <div class="actinides"><div class="series-label">Actinides</div><div class="periodic-table" id="actinides" style="grid-template-columns: repeat(15, 65px);"></div></div>
                 </div>
-                
-                <div class="input-group" id="smilesInput" style="display:none;">
-                    <label>SMILES String</label>
-                    <input type="text" id="smilesText" placeholder="e.g., CCO for ethanol">
+                <div class="selected-display" id="selectedDisplay">
+                    <strong>Selected Elements:</strong>
+                    <span id="selectedElements">None</span>
+                    <div class="helper-text">Click to add • Right-click to remove • Multiple clicks add multiple atoms</div>
                 </div>
-                
-                <div id="elementSelection">
-                    <div class="section-title" style="font-size: 1.1rem; margin-top: 30px;">Periodic Table</div>
-                    <div class="periodic-table" id="periodicTable">
-                        <!-- Elements will be populated by JavaScript -->
-                    </div>
-                    
-                    <div class="selected-display" id="selectedDisplay">
-                        <strong>Selected Elements:</strong>
-                        <span id="selectedElements">None</span>
-                    </div>
-                </div>
-                
                 <button class="btn btn-primary" onclick="predictReaction()">Calculate Reaction</button>
                 <button class="btn" onclick="clearSelection()">Clear Selection</button>
             </div>
-            
-            <!-- Results Section -->
             <div class="results-section" id="resultsSection">
                 <div class="section-title">Computational Results</div>
-                
-                <!-- Loading State -->
-                <div class="loading" id="loadingState">
-                    <div class="loading-spinner"></div>
-                    <p>Running quantum calculations...</p>
-                    <p style="font-size: 0.85rem; margin-top: 10px;">VQE optimization in progress</p>
-                </div>
-                
-                <!-- Results Content -->
+                <div class="loading" id="loadingState"><div class="loading-spinner"></div><p>Running quantum calculations...</p></div>
                 <div id="resultsContent" style="display:none;">
-                    <!-- Quantum Data -->
-                    <div class="result-item">
-                        <div class="result-label">Quantum Mechanical Data</div>
-                        <table>
-                            <tr>
-                                <th>Parameter</th>
-                                <th>Value</th>
-                                <th>Unit</th>
-                            </tr>
-                            <tbody id="quantumDataTable"></tbody>
-                        </table>
-                    </div>
-                    
-                    <!-- Predicted Products -->
-                    <div class="result-item">
-                        <div class="result-label">Predicted Products</div>
-                        <div id="productsContainer"></div>
-                    </div>
-                    
-                    <!-- Mechanism -->
-                    <div class="result-item">
-                        <div class="result-label">Reaction Mechanism</div>
-                        <div class="result-value" id="mechanismText"></div>
-                    </div>
-                    
-                    <!-- Thermodynamics -->
-                    <div class="result-item">
-                        <div class="result-label">Thermodynamic Analysis</div>
-                        <div class="result-value" id="thermodynamicsText"></div>
-                    </div>
-                    
-                    <!-- Validation Results -->
-                    <div class="result-item">
-                        <div class="result-label">Validation Analysis</div>
-                        <div id="validationContainer"></div>
-                    </div>
+                    <div class="result-item"><div class="result-label">Quantum Mechanical Data</div><table><tr><th>Parameter</th><th>Value</th><th>Unit</th></tr><tbody id="quantumDataTable"></tbody></table></div>
+                    <div class="result-item"><div class="result-label">Predicted Products</div><div id="productsContainer"></div></div>
+                    <div class="result-item"><div class="result-label">Reaction Mechanism</div><div class="result-value" id="mechanismText"></div></div>
+                    <div class="result-item"><div class="result-label">Thermodynamic Analysis</div><div class="result-value" id="thermodynamicsText"></div></div>
+                    <div class="result-item"><div class="result-label">Validation Analysis</div><div id="validationContainer"></div></div>
                 </div>
             </div>
         </div>
-        
-        <!-- Footer -->
         <div class="footer">
             <p>© 2024 Quantum Chemistry Reaction Predictor. All rights reserved.</p>
             <div class="footer-links">
-                <a href="#">Documentation</a>
-                <a href="#">API Reference</a>
-                <a href="#">GitHub Repository</a>
-                <a href="#">Citation</a>
+                <a href="https://github.com/samuelsaggiobraga/Chemical-Reaction-Predicter-VQE-" target="_blank">GitHub Repository</a>
+                <a href="https://github.com/samuelsaggiobraga/Chemical-Reaction-Predicter-VQE-/blob/main/README.md" target="_blank">Documentation</a>
+                <a href="https://github.com/samuelsaggiobraga/Chemical-Reaction-Predicter-VQE-/blob/main/IMPROVEMENTS.md" target="_blank">Technical Details</a>
+                <a href="mailto:samuelsaggiombraga@gmail.com">Contact</a>
             </div>
         </div>
     </div>
-    
-    <script>
-        // All main group and common elements
-        const elements = [
-            {symbol: 'H', name: 'Hydrogen', number: 1},
-            {symbol: 'He', name: 'Helium', number: 2},
-            {symbol: 'Li', name: 'Lithium', number: 3},
-            {symbol: 'Be', name: 'Beryllium', number: 4},
-            {symbol: 'B', name: 'Boron', number: 5},
-            {symbol: 'C', name: 'Carbon', number: 6},
-            {symbol: 'N', name: 'Nitrogen', number: 7},
-            {symbol: 'O', name: 'Oxygen', number: 8},
-            {symbol: 'F', name: 'Fluorine', number: 9},
-            {symbol: 'Ne', name: 'Neon', number: 10},
-            {symbol: 'Na', name: 'Sodium', number: 11},
-            {symbol: 'Mg', name: 'Magnesium', number: 12},
-            {symbol: 'Al', name: 'Aluminum', number: 13},
-            {symbol: 'Si', name: 'Silicon', number: 14},
-            {symbol: 'P', name: 'Phosphorus', number: 15},
-            {symbol: 'S', name: 'Sulfur', number: 16},
-            {symbol: 'Cl', name: 'Chlorine', number: 17},
-            {symbol: 'Ar', name: 'Argon', number: 18},
-            {symbol: 'K', name: 'Potassium', number: 19},
-            {symbol: 'Ca', name: 'Calcium', number: 20},
-            {symbol: 'Sc', name: 'Scandium', number: 21},
-            {symbol: 'Ti', name: 'Titanium', number: 22},
-            {symbol: 'V', name: 'Vanadium', number: 23},
-            {symbol: 'Cr', name: 'Chromium', number: 24},
-            {symbol: 'Mn', name: 'Manganese', number: 25},
-            {symbol: 'Fe', name: 'Iron', number: 26},
-            {symbol: 'Co', name: 'Cobalt', number: 27},
-            {symbol: 'Ni', name: 'Nickel', number: 28},
-            {symbol: 'Cu', name: 'Copper', number: 29},
-            {symbol: 'Zn', name: 'Zinc', number: 30},
-            {symbol: 'Ga', name: 'Gallium', number: 31},
-            {symbol: 'Ge', name: 'Germanium', number: 32},
-            {symbol: 'As', name: 'Arsenic', number: 33},
-            {symbol: 'Se', name: 'Selenium', number: 34},
-            {symbol: 'Br', name: 'Bromine', number: 35},
-            {symbol: 'Kr', name: 'Krypton', number: 36},
-            {symbol: 'Rb', name: 'Rubidium', number: 37},
-            {symbol: 'Sr', name: 'Strontium', number: 38},
-            {symbol: 'Y', name: 'Yttrium', number: 39},
-            {symbol: 'Zr', name: 'Zirconium', number: 40},
-            {symbol: 'Nb', name: 'Niobium', number: 41},
-            {symbol: 'Mo', name: 'Molybdenum', number: 42},
-            {symbol: 'Tc', name: 'Technetium', number: 43},
-            {symbol: 'Ru', name: 'Ruthenium', number: 44},
-            {symbol: 'Rh', name: 'Rhodium', number: 45},
-            {symbol: 'Pd', name: 'Palladium', number: 46},
-            {symbol: 'Ag', name: 'Silver', number: 47},
-            {symbol: 'Cd', name: 'Cadmium', number: 48},
-            {symbol: 'In', name: 'Indium', number: 49},
-            {symbol: 'Sn', name: 'Tin', number: 50},
-            {symbol: 'Sb', name: 'Antimony', number: 51},
-            {symbol: 'Te', name: 'Tellurium', number: 52},
-            {symbol: 'I', name: 'Iodine', number: 53},
-            {symbol: 'Xe', name: 'Xenon', number: 54},
-            {symbol: 'Cs', name: 'Cesium', number: 55},
-            {symbol: 'Ba', name: 'Barium', number: 56}
-        ];
-        
-        let selectedElements = [];
-        
-        // Initialize periodic table
-        function initPeriodicTable() {
-            const table = document.getElementById('periodicTable');
-            elements.forEach(elem => {
-                const div = document.createElement('div');
-                div.className = 'element';
-                div.onclick = () => toggleElement(elem.symbol);
-                div.innerHTML = `
-                    <div class="element-number">${elem.number}</div>
-                    <div class="element-symbol">${elem.symbol}</div>
-                    <div class="element-name">${elem.name}</div>
-                `;
-                div.id = `elem-${elem.symbol}`;
-                table.appendChild(div);
-            });
-        }
-        
-        function toggleElement(symbol) {
-            const elem = document.getElementById(`elem-${symbol}`);
-            const index = selectedElements.indexOf(symbol);
-            
-            if (index > -1) {
-                selectedElements.splice(index, 1);
-                elem.classList.remove('selected');
-            } else {
-                selectedElements.push(symbol);
-                elem.classList.add('selected');
-            }
-            
-            updateSelectedDisplay();
-        }
-        
-        function updateSelectedDisplay() {
-            const display = document.getElementById('selectedElements');
-            display.textContent = selectedElements.length > 0 ? selectedElements.join(' + ') : 'None';
-        }
-        
-        function clearSelection() {
-            selectedElements.forEach(symbol => {
-                document.getElementById(`elem-${symbol}`).classList.remove('selected');
-            });
-            selectedElements = [];
-            updateSelectedDisplay();
-        }
-        
-        async function predictReaction() {
-            if (selectedElements.length === 0) {
-                alert('Please select at least one element');
-                return;
-            }
-            
-            // Show results section and loading state
-            document.getElementById('resultsSection').classList.add('show');
-            document.getElementById('loadingState').style.display = 'block';
-            document.getElementById('resultsContent').style.display = 'none';
-            
-            // Update loading message with progress
-            const loadingDiv = document.getElementById('loadingState');
-            loadingDiv.innerHTML = `
-                <div class="loading-spinner"></div>
-                <p style="font-size: 1.1rem; margin-bottom: 10px;">Running quantum calculations...</p>
-                <p style="font-size: 0.85rem; color: #8a8a8a;">Step 1/3: Building molecular Hamiltonian (PySCF)</p>
-            `;
-            
-            try {
-                // Simulate progress updates
-                setTimeout(() => {
-                    loadingDiv.innerHTML = `
-                        <div class="loading-spinner"></div>
-                        <p style="font-size: 1.1rem; margin-bottom: 10px;">Running quantum calculations...</p>
-                        <p style="font-size: 0.85rem; color: #8a8a8a;">Step 2/3: VQE optimization (MATLAB)</p>
-                        <p style="font-size: 0.75rem; color: #6a6a6a; margin-top: 8px;">This may take 10-60 seconds for first run...</p>
-                    `;
-                }, 2000);
-                
-                const response = await fetch('http://localhost:5001/api/predict-reaction', {
-                    method: 'POST',
-                    headers: {'Content-Type': 'application/json'},
-                    body: JSON.stringify({elements: selectedElements})
-                });
-                
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-                }
-                
-                loadingDiv.innerHTML = `
-                    <div class="loading-spinner"></div>
-                    <p style="font-size: 1.1rem; margin-bottom: 10px;">Almost done...</p>
-                    <p style="font-size: 0.85rem; color: #8a8a8a;">Step 3/3: AI prediction and validation</p>
-                `;
-                
-                const data = await response.json();
-                
-                if (!data.success) {
-                    throw new Error(data.error || 'Prediction failed');
-                }
-                
-                // Hide loading, show results
-                document.getElementById('loadingState').style.display = 'none';
-                document.getElementById('resultsContent').style.display = 'block';
-                
-                displayResults(data);
-            } catch (error) {
-                document.getElementById('loadingState').innerHTML = `
-                    <div style="padding: 20px; text-align: left;">
-                        <p style="color: #aa6a6a; font-size: 1.1rem; margin-bottom: 10px;">⚠ Error</p>
-                        <p style="color: #8a8a8a; font-size: 0.9rem; line-height: 1.6;">${error.message}</p>
-                        <p style="color: #6a6a6a; font-size: 0.85rem; margin-top: 15px;">Please ensure:</p>
-                        <ul style="color: #6a6a6a; font-size: 0.85rem; margin-left: 20px; line-height: 1.8;">
-                            <li>API server is running (python backend/api/server.py)</li>
-                            <li>MATLAB is installed and configured</li>
-                            <li>Gemini API key is set in config/.env</li>
-                        </ul>
-                    </div>
-                `;
-            }
-        }
-        
-        function displayResults(data) {
-            // Quantum Data Table
-            const quantumTable = document.getElementById('quantumDataTable');
-            quantumTable.innerHTML = `
-                <tr><td>VQE Energy</td><td>${data.quantum_data.vqe_energy?.toFixed(6) || 'N/A'}</td><td>Hartree</td></tr>
-                <tr><td>Hartree-Fock Energy</td><td>${data.quantum_data.hf_energy?.toFixed(6) || 'N/A'}</td><td>Hartree</td></tr>
-                <tr><td>Energy Improvement</td><td>${data.quantum_data.energy_improvement?.toFixed(6) || 'N/A'}</td><td>Hartree</td></tr>
-                <tr><td>Number of Electrons</td><td>${data.quantum_data.num_electrons || 'N/A'}</td><td>—</td></tr>
-                <tr><td>Number of Qubits</td><td>${data.quantum_data.num_qubits || 'N/A'}</td><td>—</td></tr>
-            `;
-            
-            // Products
-            const productsContainer = document.getElementById('productsContainer');
-            productsContainer.innerHTML = data.ai_prediction.products.map(p => `
-                <div class="product-card">
-                    <div class="product-formula">${p.formula}</div>
-                    <div class="product-name">${p.name}</div>
-                    <div class="product-probability">Probability: ${(p.probability * 100).toFixed(1)}%</div>
-                </div>
-            `).join('');
-            
-            // Mechanism and Thermodynamics
-            document.getElementById('mechanismText').textContent = data.ai_prediction.mechanism || 'Not provided';
-            document.getElementById('thermodynamicsText').textContent = data.ai_prediction.thermodynamics || 'Not provided';
-            
-            // Validation
-            const validation = data.ai_prediction.validation;
-            if (validation) {
-                const validationContainer = document.getElementById('validationContainer');
-                const statusClass = validation.result === 'LIKELY_CORRECT' ? 'correct' : 
-                                   validation.result === 'UNCERTAIN' ? 'warning' : 'error';
-                
-                validationContainer.innerHTML = `
-                    <div class="validation-box ${statusClass}">
-                        <div class="validation-status">${validation.result.replace(/_/g, ' ')}</div>
-                        <div class="validation-details">
-                            <p><strong>Confidence:</strong> ${(validation.confidence * 100).toFixed(1)}%</p>
-                            <p><strong>Checks Passed:</strong> ${validation.checks_passed}</p>
-                            <p><strong>Recommendation:</strong> ${validation.recommendation}</p>
-                            ${validation.warnings.length > 0 ? `
-                                <p style="margin-top: 10px;"><strong>Warnings:</strong></p>
-                                <ul style="margin-left: 20px;">
-                                    ${validation.warnings.map(w => `<li>${w}</li>`).join('')}
-                                </ul>
-                            ` : ''}
-                        </div>
-                    </div>
-                `;
-            }
-        }
-        
-        // Input method switching
-        document.getElementById('inputMethod').onchange = function() {
-            const method = this.value;
-            document.getElementById('smilesInput').style.display = method === 'smiles' ? 'block' : 'none';
-            document.getElementById('elementSelection').style.display = method === 'elements' ? 'block' : 'none';
-        };
-        
-        // Initialize
-        initPeriodicTable();
-    </script>
+    <script src="periodic_table.js"></script>
 </body>
 </html>
