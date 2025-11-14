@@ -1,0 +1,681 @@
+{
+  "reactions": [
+    {
+      "reactants": [
+        "H",
+        "H"
+      ],
+      "products": [
+        "H2"
+      ],
+      "type": "combination"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "combination"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "combination"
+    },
+    {
+      "reactants": [
+        "N",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "NH3"
+      ],
+      "type": "combination"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "combination"
+    },
+    {
+      "reactants": [
+        "O",
+        "O"
+      ],
+      "products": [
+        "O2"
+      ],
+      "type": "combination"
+    },
+    {
+      "reactants": [
+        "N",
+        "N"
+      ],
+      "products": [
+        "N2"
+      ],
+      "type": "combination"
+    },
+    {
+      "reactants": [
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "Cl2"
+      ],
+      "type": "combination"
+    },
+    {
+      "reactants": [
+        "F",
+        "F"
+      ],
+      "products": [
+        "F2"
+      ],
+      "type": "combination"
+    },
+    {
+      "reactants": [
+        "Na",
+        "Cl"
+      ],
+      "products": [
+        "NaCl"
+      ],
+      "type": "ionic"
+    },
+    {
+      "reactants": [
+        "K",
+        "Cl"
+      ],
+      "products": [
+        "KCl"
+      ],
+      "type": "ionic"
+    },
+    {
+      "reactants": [
+        "Mg",
+        "O"
+      ],
+      "products": [
+        "MgO"
+      ],
+      "type": "ionic"
+    },
+    {
+      "reactants": [
+        "Ca",
+        "O"
+      ],
+      "products": [
+        "CaO"
+      ],
+      "type": "ionic"
+    },
+    {
+      "reactants": [
+        "Al",
+        "O",
+        "O",
+        "O"
+      ],
+      "products": [
+        "Al2O3"
+      ],
+      "type": "ionic"
+    },
+    {
+      "reactants": [
+        "H",
+        "Cl"
+      ],
+      "products": [
+        "HCl"
+      ],
+      "type": "covalent"
+    },
+    {
+      "reactants": [
+        "H",
+        "F"
+      ],
+      "products": [
+        "HF"
+      ],
+      "type": "covalent"
+    },
+    {
+      "reactants": [
+        "H",
+        "Br"
+      ],
+      "products": [
+        "HBr"
+      ],
+      "type": "covalent"
+    },
+    {
+      "reactants": [
+        "H",
+        "I"
+      ],
+      "products": [
+        "HI"
+      ],
+      "type": "covalent"
+    },
+    {
+      "reactants": [
+        "S",
+        "O",
+        "O"
+      ],
+      "products": [
+        "SO2"
+      ],
+      "type": "oxide"
+    },
+    {
+      "reactants": [
+        "S",
+        "O",
+        "O",
+        "O"
+      ],
+      "products": [
+        "SO3"
+      ],
+      "type": "oxide"
+    },
+    {
+      "reactants": [
+        "N",
+        "O",
+        "O"
+      ],
+      "products": [
+        "NO2"
+      ],
+      "type": "oxide"
+    },
+    {
+      "reactants": [
+        "N",
+        "O"
+      ],
+      "products": [
+        "NO"
+      ],
+      "type": "oxide"
+    },
+    {
+      "reactants": [
+        "P",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O"
+      ],
+      "products": [
+        "P2O5"
+      ],
+      "type": "oxide"
+    },
+    {
+      "reactants": [
+        "Na",
+        "O",
+        "H"
+      ],
+      "products": [
+        "NaOH"
+      ],
+      "type": "base"
+    },
+    {
+      "reactants": [
+        "K",
+        "O",
+        "H"
+      ],
+      "products": [
+        "KOH"
+      ],
+      "type": "base"
+    },
+    {
+      "reactants": [
+        "Ca",
+        "O",
+        "H",
+        "O",
+        "H"
+      ],
+      "products": [
+        "Ca(OH)2"
+      ],
+      "type": "base"
+    },
+    {
+      "reactants": [
+        "H",
+        "N",
+        "O",
+        "O",
+        "O"
+      ],
+      "products": [
+        "HNO3"
+      ],
+      "type": "acid"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "S",
+        "O",
+        "O",
+        "O",
+        "O"
+      ],
+      "products": [
+        "H2SO4"
+      ],
+      "type": "acid"
+    },
+    {
+      "reactants": [
+        "Ca",
+        "C",
+        "O",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CaCO3"
+      ],
+      "type": "salt"
+    },
+    {
+      "reactants": [
+        "Na",
+        "Na",
+        "C",
+        "O",
+        "O",
+        "O"
+      ],
+      "products": [
+        "Na2CO3"
+      ],
+      "type": "salt"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C2H6"
+      ],
+      "type": "organic"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C3H8"
+      ],
+      "type": "organic"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "O",
+        "H"
+      ],
+      "products": [
+        "CH3OH"
+      ],
+      "type": "organic"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O",
+        "H"
+      ],
+      "products": [
+        "C2H5OH"
+      ],
+      "type": "organic"
+    },
+    {
+      "reactants": [
+        "O",
+        "H"
+      ],
+      "products": [
+        "OH"
+      ],
+      "type": "radical"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH3"
+      ],
+      "type": "radical"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "S"
+      ],
+      "products": [
+        "H2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "Na",
+        "Na",
+        "S"
+      ],
+      "products": [
+        "Na2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "Li",
+        "Li",
+        "Li",
+        "N"
+      ],
+      "products": [
+        "Li3N"
+      ],
+      "type": "nitride"
+    },
+    {
+      "reactants": [
+        "Na",
+        "Na",
+        "Na",
+        "P",
+        "O",
+        "O",
+        "O",
+        "O"
+      ],
+      "products": [
+        "Na3PO4"
+      ],
+      "type": "salt"
+    },
+    {
+      "reactants": [
+        "Na",
+        "Na",
+        "S",
+        "O",
+        "O",
+        "O",
+        "O"
+      ],
+      "products": [
+        "Na2SO4"
+      ],
+      "type": "salt"
+    },
+    {
+      "reactants": [
+        "Mg",
+        "S",
+        "O",
+        "O",
+        "O",
+        "O"
+      ],
+      "products": [
+        "MgSO4"
+      ],
+      "type": "salt"
+    },
+    {
+      "reactants": [
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "Br2"
+      ],
+      "type": "combination"
+    },
+    {
+      "reactants": [
+        "F",
+        "F"
+      ],
+      "products": [
+        "F2"
+      ],
+      "type": "combination"
+    },
+    {
+      "reactants": [
+        "K",
+        "Cl"
+      ],
+      "products": [
+        "KCl"
+      ],
+      "type": "ionic"
+    },
+    {
+      "reactants": [
+        "Li",
+        "Cl"
+      ],
+      "products": [
+        "LiCl"
+      ],
+      "type": "ionic"
+    },
+    {
+      "reactants": [
+        "Na",
+        "Br"
+      ],
+      "products": [
+        "NaBr"
+      ],
+      "type": "ionic"
+    },
+    {
+      "reactants": [
+        "Na",
+        "F"
+      ],
+      "products": [
+        "NaF"
+      ],
+      "type": "ionic"
+    },
+    {
+      "reactants": [
+        "K",
+        "Br"
+      ],
+      "products": [
+        "KBr"
+      ],
+      "type": "ionic"
+    },
+    {
+      "reactants": [
+        "K",
+        "F"
+      ],
+      "products": [
+        "KF"
+      ],
+      "type": "ionic"
+    },
+    {
+      "reactants": [
+        "H",
+        "Br"
+      ],
+      "products": [
+        "HBr"
+      ],
+      "type": "covalent"
+    },
+    {
+      "reactants": [
+        "H",
+        "F"
+      ],
+      "products": [
+        "HF"
+      ],
+      "type": "covalent"
+    },
+    {
+      "reactants": [
+        "K",
+        "O",
+        "H"
+      ],
+      "products": [
+        "KOH"
+      ],
+      "type": "base"
+    },
+    {
+      "reactants": [
+        "Li",
+        "O",
+        "H"
+      ],
+      "products": [
+        "LiOH"
+      ],
+      "type": "base"
+    },
+    {
+      "reactants": [
+        "K",
+        "K",
+        "C",
+        "O",
+        "O",
+        "O"
+      ],
+      "products": [
+        "K2CO3"
+      ],
+      "type": "salt"
+    },
+    {
+      "reactants": [
+        "Li",
+        "Li",
+        "C",
+        "O",
+        "O",
+        "O"
+      ],
+      "products": [
+        "Li2CO3"
+      ],
+      "type": "salt"
+    },
+    {
+      "reactants": [
+        "K",
+        "K",
+        "S"
+      ],
+      "products": [
+        "K2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "Li",
+        "Li",
+        "S"
+      ],
+      "products": [
+        "Li2S"
+      ],
+      "type": "sulfide"
+    }
+  ],
+  "count": 58,
+  "source": "curated_textbook_reactions"
+}
