@@ -17,6 +17,7 @@ from backend.quantum_chemistry.molecular_geometries import get_molecule_geometry
 from backend.quantum_chemistry.organic_chemistry import (
     SMILESParser, FunctionalGroupDetector, OrganicMoleculeBuilder, OrganicReactionClassifier
 )
+from backend.quantum_chemistry.ml_validator import ReactionValidator
 
 # Load environment variables
 load_dotenv('config/.env')
@@ -31,6 +32,7 @@ matlab_bridge = MatlabQuantumBridge(
 gemini_predictor = GeminiReactionPredictor(
     api_key=os.getenv('GEMINI_API_KEY')
 )
+reaction_validator = ReactionValidator()
 
 @app.route('/api/health', methods=['GET'])
 def health_check():
@@ -105,6 +107,15 @@ def predict_reaction():
         # Step 2: Get AI prediction from Gemini
         print("\nStep 2: Getting AI prediction from Gemini...")
         ai_prediction = gemini_predictor.predict_reaction(elements, quantum_data)
+        
+        # Step 3: Validate prediction with ML validator
+        print("\nStep 3: Validating prediction...")
+        validation_result = reaction_validator.validate_prediction(
+            elements,
+            ai_prediction.get('products', []),
+            ai_prediction.get('preprocessed_features', {})
+        )
+        ai_prediction['validation'] = validation_result
         
         response = {
             'input_elements': elements,
