@@ -10,14 +10,16 @@ import sys
 # Add parent directory for imports
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from backend.quantum_chemistry.hamiltonian_builder import HamiltonianBuilder
+from backend.quantum_chemistry.result_cache import SmartCache
 
 
 class MatlabQuantumBridge:
     """Orchestrate Python → MATLAB → Python pipeline for quantum calculations"""
     
-    def __init__(self, matlab_path: str = "/Applications/MATLAB_R2025b.app/bin/matlab"):
+    def __init__(self, matlab_path: str = "/Applications/MATLAB_R2025b.app/bin/matlab", use_cache: bool = True):
         self.matlab_path = matlab_path
         self.hamiltonian_builder = HamiltonianBuilder()
+        self.cache = SmartCache() if use_cache else None
         
     def calculate_molecule_properties(self, elements: List[str], geometry: Dict = None) -> Dict[str, Any]:
         """
@@ -30,6 +32,13 @@ class MatlabQuantumBridge:
         Returns:
             Complete quantum chemistry data for Gemini
         """
+        
+        # Check cache first
+        if self.cache:
+            cached_result = self.cache.get(elements, geometry)
+            if cached_result:
+                print(f"[CACHE HIT] Retrieved cached results for {elements}")
+                return cached_result
         
         print(f"[1/3] Building Hamiltonian for {elements}...")
         
@@ -59,6 +68,11 @@ class MatlabQuantumBridge:
         # Cleanup temp files
         results_file = os.path.join(os.path.dirname(os.path.abspath(hamiltonian_file)), 'vqe_results.json')
         self._cleanup([hamiltonian_file, results_file])
+        
+        # Cache the results
+        if self.cache:
+            self.cache.set(elements, complete_results, geometry)
+            print(f"[CACHE] Stored results for {elements}")
         
         return complete_results
     
