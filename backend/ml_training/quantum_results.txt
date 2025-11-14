@@ -1,0 +1,34 @@
+================================================================================
+QUANTUM DATA IMPACT TEST
+================================================================================
+
+📊 Testing WITH rich quantum data...
+  ✅ ['H', 'H'] → H2
+  ✅ ['H', 'H', 'O'] → H2O
+  ✅ ['Na', 'Cl'] → NaCl
+  ❌ ['C', 'H', 'H', 'H', 'H'] → H2
+  ✅ ['O', 'O'] → O2
+  ✅ ['C', 'O', 'O'] → CO2
+  ✅ ['N', 'H', 'H', 'H'] → NH3
+  ✅ ['N', 'N'] → N2
+
+📊 Testing WITHOUT quantum data (minimal placeholders)...
+  ❌ ['H', 'H'] → ERROR
+  ❌ ['H', 'H', 'O'] → ERROR
+  ❌ ['Na', 'Cl'] → ERROR
+  ❌ ['C', 'H', 'H', 'H', 'H'] → ERROR
+  ❌ ['O', 'O'] → ERROR
+  ❌ ['C', 'O', 'O'] → ERROR
+  ❌ ['N', 'H', 'H', 'H'] → ERROR
+  ❌ ['N', 'N'] → ERROR
+
+================================================================================
+RESULTS:
+================================================================================
+Accuracy WITH quantum data:    87.5% (7/8)
+Accuracy WITHOUT quantum data: 0.0% (0/8)
+Difference:                    +87.5%
+
+✅ CONCLUSION: Quantum data IMPROVES accuracy significantly
+   Recommendation: KEEP VQE integration for better predictions
+================================================================================

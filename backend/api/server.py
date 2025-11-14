@@ -17,10 +17,13 @@ from backend.quantum_chemistry.molecular_geometries import get_molecule_geometry
 from backend.quantum_chemistry.organic_chemistry import (
     SMILESParser, FunctionalGroupDetector, OrganicMoleculeBuilder, OrganicReactionClassifier
 )
-from backend.quantum_chemistry.ml_validator import ReactionValidator
+# Import hierarchical predictor
+sys.path.append(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'ml_training'))
+from hierarchical_predictor import HierarchicalReactionPredictor
 
-# Load environment variables
-load_dotenv('config/.env')
+# Load environment variables from project root
+project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+load_dotenv(os.path.join(project_root, 'config', '.env'))
 
 app = Flask(__name__)
 CORS(app)
@@ -29,10 +32,16 @@ CORS(app)
 matlab_bridge = MatlabQuantumBridge(
     matlab_path=os.getenv('MATLAB_PATH', '/Applications/MATLAB_R2025b.app/bin/matlab')
 )
-gemini_predictor = GeminiReactionPredictor(
-    api_key=os.getenv('GEMINI_API_KEY')
-)
-reaction_validator = ReactionValidator()
+
+# Load hierarchical predictor (4-level ensemble)
+try:
+    os.chdir(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'ml_training'))
+    hierarchical_predictor = HierarchicalReactionPredictor(use_quantum=False)  # Enable quantum if needed
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))  # Return to API dir
+    print("✅ Hierarchical predictor loaded successfully")
+except Exception as e:
+    print(f"⚠️  Hierarchical predictor failed to load: {e}")
+    hierarchical_predictor = None
 
 @app.route('/api/health', methods=['GET'])
 def health_check():
@@ -104,18 +113,29 @@ def predict_reaction():
         print("\nStep 1: Running quantum calculations...")
         quantum_data = matlab_bridge.calculate_molecule_properties(elements, geometry)
         
-        # Step 2: Get AI prediction from Gemini
-        print("\nStep 2: Getting AI prediction from Gemini...")
-        ai_prediction = gemini_predictor.predict_reaction(elements, quantum_data)
-        
-        # Step 3: Validate prediction with ML validator
-        print("\nStep 3: Validating prediction...")
-        validation_result = reaction_validator.validate_prediction(
-            elements,
-            ai_prediction.get('products', []),
-            ai_prediction.get('preprocessed_features', {})
-        )
-        ai_prediction['validation'] = validation_result
+        # Step 2: Use hierarchical predictor (4-level ensemble)
+        print("\nStep 2: Using hierarchical predictor...")
+        if hierarchical_predictor:
+            # Hierarchical predictor handles routing automatically
+            prediction_result = hierarchical_predictor.predict(elements, quantum_data)
+            
+            print(f"   ✅ Prediction via {prediction_result['method']} ({prediction_result['speed']})")
+            
+            # Convert to API format
+            ai_prediction = {
+                'products': prediction_result['products'],
+                'confidence': prediction_result['confidence'],
+                'reasoning': prediction_result.get('reasoning', ''),
+                'method': prediction_result['method'],
+                'speed': prediction_result['speed']
+            }
+        else:
+            # Fallback to basic Gemini if hierarchical fails
+            print("\nStep 2: Fallback to Gemini (hierarchical unavailable)...")
+            from quantum_chemistry.gemini_integration import GeminiReactionPredictor
+            gemini_predictor = GeminiReactionPredictor(api_key=os.getenv('GEMINI_API_KEY'))
+            ai_prediction = gemini_predictor.predict_reaction(elements, quantum_data)
+            ai_prediction['method'] = 'gemini_fallback'
         
         response = {
             'input_elements': elements,

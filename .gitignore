@@ -40,3 +40,5 @@ test*.py
 tests/
 *_test.py
 test_*
+*.pkl
+backend/ml_training/*.pkl
