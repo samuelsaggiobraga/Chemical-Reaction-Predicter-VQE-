@@ -36,4 +36,7 @@ cache/
 server_log.txt
 
 # Test files
-test.py
+test*.py
+tests/
+*_test.py
+test_*

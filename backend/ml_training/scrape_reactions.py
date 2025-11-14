@@ -113,41 +113,49 @@ class ReactionDataScraper:
         return common_reactions
     
     def expand_with_similar_reactions(self, base_reactions: List[Dict]) -> List[Dict]:
-        """Generate more reactions by substituting similar elements"""
+        """Generate many more reactions by systematic substitution"""
         expanded = base_reactions.copy()
         
-        # Substitution groups (similar elements that behave similarly)
-        alkali_metals = ['Li', 'Na', 'K', 'Rb']
-        alkaline_earth = ['Mg', 'Ca', 'Sr', 'Ba']
-        halogens = ['F', 'Cl', 'Br', 'I']
+        # Comprehensive substitution groups
+        substitution_groups = {
+            'alkali_metals': ['Li', 'Na', 'K', 'Rb', 'Cs'],
+            'alkaline_earth': ['Be', 'Mg', 'Ca', 'Sr', 'Ba'],
+            'halogens': ['F', 'Cl', 'Br', 'I'],
+            'chalcogens': ['O', 'S', 'Se'],
+            'nobles': ['He', 'Ne', 'Ar', 'Kr', 'Xe'],
+            'transition_metals': ['Ti', 'V', 'Cr', 'Mn', 'Fe', 'Co', 'Ni', 'Cu', 'Zn'],
+        }
         
-        # Generate variants by substitution
+        # Generate variants with proper validation
         for reaction in base_reactions:
-            # Skip if too complex
-            if len(reaction['reactants']) > 6:
+            if len(reaction['reactants']) > 8:
                 continue
-                
-            # Try alkali metal substitutions
-            if 'Na' in reaction['reactants']:
-                for metal in ['K', 'Li']:
-                    new_reactants = [metal if x == 'Na' else x for x in reaction['reactants']]
-                    new_products = [p.replace('Na', metal) for p in reaction['products']]
-                    expanded.append({
-                        "reactants": new_reactants,
-                        "products": new_products,
-                        "type": reaction['type']
-                    })
             
-            # Try halogen substitutions
-            if 'Cl' in reaction['reactants']:
-                for halogen in ['Br', 'F']:
-                    new_reactants = [halogen if x == 'Cl' else x for x in reaction['reactants']]
-                    new_products = [p.replace('Cl', halogen) for p in reaction['products']]
-                    expanded.append({
-                        "reactants": new_reactants,
-                        "products": new_products,
-                        "type": reaction['type']
-                    })
+            # Only substitute elements of the same group
+            for group_name, group_elements in substitution_groups.items():
+                # Find which elements from this group are in reactants
+                present_elements = [e for e in group_elements if e in reaction['reactants']]
+                
+                if present_elements:
+                    # Try replacing with other elements from same group
+                    orig_elem = present_elements[0]
+                    for replacement in group_elements:
+                        if replacement != orig_elem:
+                            new_reactants = [replacement if x == orig_elem else x for x in reaction['reactants']]
+                            # Properly substitute in formula
+                            new_products = []
+                            for prod in reaction['products']:
+                                new_prod = prod.replace(orig_elem, replacement)
+                                # Handle multi-element formulas
+                                if len(orig_elem) == 1 and orig_elem.isupper():
+                                    new_prod = new_prod.replace(orig_elem, replacement)
+                                new_products.append(new_prod)
+                            
+                            expanded.append({
+                                "reactants": new_reactants,
+                                "products": new_products,
+                                "type": reaction['type']
+                            })
         
         return expanded
     

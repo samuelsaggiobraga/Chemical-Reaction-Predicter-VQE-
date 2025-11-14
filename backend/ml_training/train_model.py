@@ -7,15 +7,20 @@ import pickle
 from collections import Counter
 from typing import List, Dict, Tuple
 import numpy as np
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, VotingClassifier
+from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.metrics import accuracy_score, classification_report
+from sklearn.preprocessing import StandardScaler
 
 class ReactionMLModel:
     """ML model that predicts reaction products from reactants"""
     
     def __init__(self):
-        self.model = RandomForestClassifier(n_estimators=100, random_state=42)
+        # Use ensemble of multiple models for better accuracy
+        rf = RandomForestClassifier(n_estimators=200, max_depth=20, random_state=42)
+        gb = GradientBoostingClassifier(n_estimators=100, max_depth=10, random_state=42)
+        self.model = VotingClassifier(estimators=[('rf', rf), ('gb', gb)], voting='soft')
+        self.scaler = StandardScaler()
         self.element_to_idx = {}
         self.product_to_idx = {}
         self.idx_to_product = {}
@@ -85,7 +90,10 @@ class ReactionMLModel:
         X = np.array(X)
         y = np.array(y)
         
-        # Split data
+        # Scale features
+        X = self.scaler.fit_transform(X)
+        
+        # Split data (no stratify - too many unique classes)
         X_train, X_test, y_train, y_test = train_test_split(
             X, y, test_size=0.2, random_state=42
         )
@@ -93,12 +101,18 @@ class ReactionMLModel:
         print(f"   Training samples: {len(X_train)}")
         print(f"   Test samples: {len(X_test)}")
         
-        # Train
+        # Train with cross-validation
+        print(f"   Training ensemble model...")
         self.model.fit(X_train, y_train)
         
         # Evaluate
         y_pred = self.model.predict(X_test)
         accuracy = accuracy_score(y_test, y_pred)
+        
+        # Cross-validation score
+        if len(X_train) > 10:
+            cv_scores = cross_val_score(self.model, X_train, y_train, cv=min(5, len(X_train)//10))
+            print(f"   CV Score: {cv_scores.mean():.2%} (+/- {cv_scores.std():.2%})")
         
         print(f"   ✅ Training complete!")
         print(f"   Accuracy: {accuracy:.2%}")
@@ -162,6 +176,7 @@ class ReactionMLModel:
         with open(filename, 'wb') as f:
             pickle.dump({
                 'model': self.model,
+                'scaler': self.scaler,
                 'element_to_idx': self.element_to_idx,
                 'product_to_idx': self.product_to_idx,
                 'idx_to_product': self.idx_to_product
@@ -176,6 +191,7 @@ class ReactionMLModel:
         
         model = ReactionMLModel()
         model.model = data['model']
+        model.scaler = data.get('scaler', StandardScaler())  # Backward compat
         model.element_to_idx = data['element_to_idx']
         model.product_to_idx = data['product_to_idx']
         model.idx_to_product = data['idx_to_product']
