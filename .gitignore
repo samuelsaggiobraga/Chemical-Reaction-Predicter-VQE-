@@ -28,6 +28,9 @@ hamiltonian_data.json
 vqe_results.json
 matlab_integration/vqe_results.json
 
+# Cache directory
+cache/
+
 # Logs
 *.log
 server_log.txt
