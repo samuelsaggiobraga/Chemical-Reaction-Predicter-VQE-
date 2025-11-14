@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables (contains API keys)
+config/.env
+
+# Temporary quantum calculation files
+hamiltonian_data.json
+vqe_results.json
+matlab_integration/vqe_results.json
+
+# Logs
+*.log
+server_log.txt
+
+# Test files
+test.py
