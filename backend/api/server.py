@@ -14,6 +14,9 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(
 from matlab_integration.matlab_bridge import MatlabQuantumBridge
 from backend.quantum_chemistry.gemini_integration import GeminiReactionPredictor
 from backend.quantum_chemistry.molecular_geometries import get_molecule_geometry, parse_molecular_formula
+from backend.quantum_chemistry.organic_chemistry import (
+    SMILESParser, FunctionalGroupDetector, OrganicMoleculeBuilder, OrganicReactionClassifier
+)
 
 # Load environment variables
 load_dotenv('config/.env')
@@ -62,7 +65,17 @@ def predict_reaction():
         data = request.json
         elements = data.get('elements', [])
         molecules = data.get('molecules', [])
+        smiles = data.get('smiles', None)
         geometry = data.get('geometry', None)
+        
+        # Handle SMILES input for organic molecules
+        if smiles:
+            print(f"Parsing SMILES: {smiles}")
+            geometry = OrganicMoleculeBuilder.smiles_to_geometry(smiles)
+            parser = SMILESParser()
+            parsed_smiles = parser.parse(smiles)
+            elements = [atom['element'] for atom in parsed_smiles['atoms']]
+            print(f"SMILES parsed: {parsed_smiles['molecular_formula']}")
         
         # Process molecules with proper geometries
         if molecules:
