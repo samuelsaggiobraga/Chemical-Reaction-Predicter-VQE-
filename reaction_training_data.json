@@ -2,11 +2,3101 @@
   "reactions": [
     {
       "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "alkane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "alkane"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C2H6"
+      ],
+      "type": "alkane"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C2H6"
+      ],
+      "type": "alkane"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C3H8"
+      ],
+      "type": "alkane"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C3H8"
+      ],
+      "type": "alkane"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C4H10"
+      ],
+      "type": "alkane"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C4H10"
+      ],
+      "type": "alkane"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C5H12"
+      ],
+      "type": "alkane"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C5H12"
+      ],
+      "type": "alkane"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C6H14"
+      ],
+      "type": "alkane"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C6H14"
+      ],
+      "type": "alkane"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C7H16"
+      ],
+      "type": "alkane"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C7H16"
+      ],
+      "type": "alkane"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C8H18"
+      ],
+      "type": "alkane"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C8H18"
+      ],
+      "type": "alkane"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C9H20"
+      ],
+      "type": "alkane"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C9H20"
+      ],
+      "type": "alkane"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C10H22"
+      ],
+      "type": "alkane"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C10H22"
+      ],
+      "type": "alkane"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C2H4"
+      ],
+      "type": "alkene"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C2H4"
+      ],
+      "type": "alkene"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C3H6"
+      ],
+      "type": "alkene"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C3H6"
+      ],
+      "type": "alkene"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C4H8"
+      ],
+      "type": "alkene"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C4H8"
+      ],
+      "type": "alkene"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C5H10"
+      ],
+      "type": "alkene"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C5H10"
+      ],
+      "type": "alkene"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C6H12"
+      ],
+      "type": "alkene"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C6H12"
+      ],
+      "type": "alkene"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C7H14"
+      ],
+      "type": "alkene"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C7H14"
+      ],
+      "type": "alkene"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C8H16"
+      ],
+      "type": "alkene"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C8H16"
+      ],
+      "type": "alkene"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C9H18"
+      ],
+      "type": "alkene"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C9H18"
+      ],
+      "type": "alkene"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C10H20"
+      ],
+      "type": "alkene"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C10H20"
+      ],
+      "type": "alkene"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C2H2"
+      ],
+      "type": "alkyne"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C2H2"
+      ],
+      "type": "alkyne"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C3H4"
+      ],
+      "type": "alkyne"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C3H4"
+      ],
+      "type": "alkyne"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C4H6"
+      ],
+      "type": "alkyne"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C4H6"
+      ],
+      "type": "alkyne"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C5H8"
+      ],
+      "type": "alkyne"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C5H8"
+      ],
+      "type": "alkyne"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C6H10"
+      ],
+      "type": "alkyne"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C6H10"
+      ],
+      "type": "alkyne"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C7H12"
+      ],
+      "type": "alkyne"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "C7H12"
+      ],
+      "type": "alkyne"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "CH4O"
+      ],
+      "type": "alcohol"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "CH4O"
+      ],
+      "type": "alcohol"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C2H6O"
+      ],
+      "type": "alcohol"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C2H6O"
+      ],
+      "type": "alcohol"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C3H8O"
+      ],
+      "type": "alcohol"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C3H8O"
+      ],
+      "type": "alcohol"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C4H10O"
+      ],
+      "type": "alcohol"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C4H10O"
+      ],
+      "type": "alcohol"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C5H12O"
+      ],
+      "type": "alcohol"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C5H12O"
+      ],
+      "type": "alcohol"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C6H14O"
+      ],
+      "type": "alcohol"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C6H14O"
+      ],
+      "type": "alcohol"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C7H16O"
+      ],
+      "type": "alcohol"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C7H16O"
+      ],
+      "type": "alcohol"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O",
+        "O"
+      ],
+      "products": [
+        "C2H4O2"
+      ],
+      "type": "carboxylic_acid"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O",
+        "O"
+      ],
+      "products": [
+        "C2H4O2"
+      ],
+      "type": "carboxylic_acid"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O",
+        "O"
+      ],
+      "products": [
+        "C3H6O2"
+      ],
+      "type": "carboxylic_acid"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O",
+        "O"
+      ],
+      "products": [
+        "C3H6O2"
+      ],
+      "type": "carboxylic_acid"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O",
+        "O"
+      ],
+      "products": [
+        "C4H8O2"
+      ],
+      "type": "carboxylic_acid"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O",
+        "O"
+      ],
+      "products": [
+        "C4H8O2"
+      ],
+      "type": "carboxylic_acid"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O",
+        "O"
+      ],
+      "products": [
+        "C5H10O2"
+      ],
+      "type": "carboxylic_acid"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O",
+        "O"
+      ],
+      "products": [
+        "C5H10O2"
+      ],
+      "type": "carboxylic_acid"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O",
+        "O"
+      ],
+      "products": [
+        "C6H12O2"
+      ],
+      "type": "carboxylic_acid"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O",
+        "O"
+      ],
+      "products": [
+        "C6H12O2"
+      ],
+      "type": "carboxylic_acid"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O",
+        "O"
+      ],
+      "products": [
+        "C7H14O2"
+      ],
+      "type": "carboxylic_acid"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O",
+        "O"
+      ],
+      "products": [
+        "C7H14O2"
+      ],
+      "type": "carboxylic_acid"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "CH2O"
+      ],
+      "type": "aldehyde"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "CH2O"
+      ],
+      "type": "aldehyde"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C2H4O"
+      ],
+      "type": "aldehyde"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C2H4O"
+      ],
+      "type": "aldehyde"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C3H6O"
+      ],
+      "type": "aldehyde"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C3H6O"
+      ],
+      "type": "aldehyde"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C4H8O"
+      ],
+      "type": "aldehyde"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C4H8O"
+      ],
+      "type": "aldehyde"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C5H10O"
+      ],
+      "type": "aldehyde"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C5H10O"
+      ],
+      "type": "aldehyde"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C6H12O"
+      ],
+      "type": "aldehyde"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C6H12O"
+      ],
+      "type": "aldehyde"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C3H6O"
+      ],
+      "type": "ketone"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C3H6O"
+      ],
+      "type": "ketone"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C4H8O"
+      ],
+      "type": "ketone"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C4H8O"
+      ],
+      "type": "ketone"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C5H10O"
+      ],
+      "type": "ketone"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C5H10O"
+      ],
+      "type": "ketone"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C6H12O"
+      ],
+      "type": "ketone"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C6H12O"
+      ],
+      "type": "ketone"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C7H14O"
+      ],
+      "type": "ketone"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C7H14O"
+      ],
+      "type": "ketone"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "N"
+      ],
+      "products": [
+        "CH5N"
+      ],
+      "type": "amine"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "N"
+      ],
+      "products": [
+        "CH5N"
+      ],
+      "type": "amine"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "N"
+      ],
+      "products": [
+        "C2H7N"
+      ],
+      "type": "amine"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "N"
+      ],
+      "products": [
+        "C2H7N"
+      ],
+      "type": "amine"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "N"
+      ],
+      "products": [
+        "C3H9N"
+      ],
+      "type": "amine"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "N"
+      ],
+      "products": [
+        "C3H9N"
+      ],
+      "type": "amine"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "N"
+      ],
+      "products": [
+        "C4H11N"
+      ],
+      "type": "amine"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "N"
+      ],
+      "products": [
+        "C4H11N"
+      ],
+      "type": "amine"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "N"
+      ],
+      "products": [
+        "C5H13N"
+      ],
+      "type": "amine"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "N"
+      ],
+      "products": [
+        "C5H13N"
+      ],
+      "type": "amine"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "N"
+      ],
+      "products": [
+        "C6H15N"
+      ],
+      "type": "amine"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "N"
+      ],
+      "products": [
+        "C6H15N"
+      ],
+      "type": "amine"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C2H6O"
+      ],
+      "type": "ether"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C2H6O"
+      ],
+      "type": "ether"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C3H8O"
+      ],
+      "type": "ether"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C3H8O"
+      ],
+      "type": "ether"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C4H10O"
+      ],
+      "type": "ether"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C4H10O"
+      ],
+      "type": "ether"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C5H12O"
+      ],
+      "type": "ether"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C5H12O"
+      ],
+      "type": "ether"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C6H14O"
+      ],
+      "type": "ether"
+    },
+    {
+      "reactants": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "C6H14O"
+      ],
+      "type": "ether"
+    },
+    {
+      "reactants": [
         "H",
         "H"
       ],
       "products": [
         "H2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "H",
+        "H"
+      ],
+      "products": [
+        "H2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "H",
+        "H"
+      ],
+      "products": [
+        "H2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "H",
+        "H"
+      ],
+      "products": [
+        "H2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "H",
+        "H"
+      ],
+      "products": [
+        "H2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "H",
+        "H"
+      ],
+      "products": [
+        "H2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "H",
+        "H"
+      ],
+      "products": [
+        "H2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "H",
+        "H"
+      ],
+      "products": [
+        "H2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "H",
+        "H"
+      ],
+      "products": [
+        "H2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "H",
+        "H"
+      ],
+      "products": [
+        "H2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "H",
+        "H"
+      ],
+      "products": [
+        "H2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "H",
+        "H"
+      ],
+      "products": [
+        "H2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "H",
+        "H"
+      ],
+      "products": [
+        "H2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "H",
+        "H"
+      ],
+      "products": [
+        "H2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "H",
+        "H"
+      ],
+      "products": [
+        "H2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "N",
+        "N"
+      ],
+      "products": [
+        "N2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "N",
+        "N"
+      ],
+      "products": [
+        "N2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "N",
+        "N"
+      ],
+      "products": [
+        "N2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "N",
+        "N"
+      ],
+      "products": [
+        "N2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "N",
+        "N"
+      ],
+      "products": [
+        "N2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "N",
+        "N"
+      ],
+      "products": [
+        "N2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "N",
+        "N"
+      ],
+      "products": [
+        "N2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "N",
+        "N"
+      ],
+      "products": [
+        "N2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "N",
+        "N"
+      ],
+      "products": [
+        "N2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "N",
+        "N"
+      ],
+      "products": [
+        "N2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "N",
+        "N"
+      ],
+      "products": [
+        "N2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "N",
+        "N"
+      ],
+      "products": [
+        "N2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "N",
+        "N"
+      ],
+      "products": [
+        "N2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "N",
+        "N"
+      ],
+      "products": [
+        "N2"
       ],
       "type": "diatomic"
     },
@@ -32,11 +3122,431 @@
     },
     {
       "reactants": [
+        "O",
+        "O"
+      ],
+      "products": [
+        "O2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "O",
+        "O"
+      ],
+      "products": [
+        "O2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "O",
+        "O"
+      ],
+      "products": [
+        "O2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "O",
+        "O"
+      ],
+      "products": [
+        "O2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "O",
+        "O"
+      ],
+      "products": [
+        "O2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "O",
+        "O"
+      ],
+      "products": [
+        "O2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "O",
+        "O"
+      ],
+      "products": [
+        "O2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "O",
+        "O"
+      ],
+      "products": [
+        "O2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "O",
+        "O"
+      ],
+      "products": [
+        "O2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "O",
+        "O"
+      ],
+      "products": [
+        "O2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "O",
+        "O"
+      ],
+      "products": [
+        "O2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "O",
+        "O"
+      ],
+      "products": [
+        "O2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "O",
+        "O"
+      ],
+      "products": [
+        "O2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "O",
+        "O"
+      ],
+      "products": [
+        "O2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
         "F",
         "F"
       ],
       "products": [
         "F2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "F",
+        "F"
+      ],
+      "products": [
+        "F2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "F",
+        "F"
+      ],
+      "products": [
+        "F2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "F",
+        "F"
+      ],
+      "products": [
+        "F2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "F",
+        "F"
+      ],
+      "products": [
+        "F2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "F",
+        "F"
+      ],
+      "products": [
+        "F2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "F",
+        "F"
+      ],
+      "products": [
+        "F2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "F",
+        "F"
+      ],
+      "products": [
+        "F2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "F",
+        "F"
+      ],
+      "products": [
+        "F2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "F",
+        "F"
+      ],
+      "products": [
+        "F2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "F",
+        "F"
+      ],
+      "products": [
+        "F2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "F",
+        "F"
+      ],
+      "products": [
+        "F2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "F",
+        "F"
+      ],
+      "products": [
+        "F2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "F",
+        "F"
+      ],
+      "products": [
+        "F2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "F",
+        "F"
+      ],
+      "products": [
+        "F2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "Cl2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "Cl2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "Cl2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "Cl2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "Cl2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "Cl2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "Cl2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "Cl2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "Cl2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "Cl2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "Cl2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "Cl2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "Cl2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "Cl2"
       ],
       "type": "diatomic"
     },
@@ -62,6 +3572,286 @@
     },
     {
       "reactants": [
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "Br2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "Br2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "Br2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "Br2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "Br2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "Br2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "Br2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "Br2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "Br2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "Br2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "Br2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "Br2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "Br2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "Br2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "I",
+        "I"
+      ],
+      "products": [
+        "I2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "I",
+        "I"
+      ],
+      "products": [
+        "I2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "I",
+        "I"
+      ],
+      "products": [
+        "I2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "I",
+        "I"
+      ],
+      "products": [
+        "I2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "I",
+        "I"
+      ],
+      "products": [
+        "I2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "I",
+        "I"
+      ],
+      "products": [
+        "I2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "I",
+        "I"
+      ],
+      "products": [
+        "I2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "I",
+        "I"
+      ],
+      "products": [
+        "I2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "I",
+        "I"
+      ],
+      "products": [
+        "I2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "I",
+        "I"
+      ],
+      "products": [
+        "I2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "I",
+        "I"
+      ],
+      "products": [
+        "I2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "I",
+        "I"
+      ],
+      "products": [
+        "I2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "I",
+        "I"
+      ],
+      "products": [
+        "I2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
+        "I",
+        "I"
+      ],
+      "products": [
+        "I2"
+      ],
+      "type": "diatomic"
+    },
+    {
+      "reactants": [
         "I",
         "I"
       ],
@@ -78,7 +3868,27 @@
       "products": [
         "LiF"
       ],
-      "type": "ionic"
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Li",
+        "F"
+      ],
+      "products": [
+        "LiF"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Li",
+        "F"
+      ],
+      "products": [
+        "LiF"
+      ],
+      "type": "binary_ionic"
     },
     {
       "reactants": [
@@ -88,7 +3898,27 @@
       "products": [
         "LiCl"
       ],
-      "type": "ionic"
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Li",
+        "Cl"
+      ],
+      "products": [
+        "LiCl"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Li",
+        "Cl"
+      ],
+      "products": [
+        "LiCl"
+      ],
+      "type": "binary_ionic"
     },
     {
       "reactants": [
@@ -98,7 +3928,27 @@
       "products": [
         "LiBr"
       ],
-      "type": "ionic"
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Li",
+        "Br"
+      ],
+      "products": [
+        "LiBr"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Li",
+        "Br"
+      ],
+      "products": [
+        "LiBr"
+      ],
+      "type": "binary_ionic"
     },
     {
       "reactants": [
@@ -108,167 +3958,27 @@
       "products": [
         "LiI"
       ],
-      "type": "ionic"
+      "type": "binary_ionic"
     },
     {
       "reactants": [
-        "Na",
-        "F"
-      ],
-      "products": [
-        "NaF"
-      ],
-      "type": "ionic"
-    },
-    {
-      "reactants": [
-        "Na",
-        "Cl"
-      ],
-      "products": [
-        "NaCl"
-      ],
-      "type": "ionic"
-    },
-    {
-      "reactants": [
-        "Na",
-        "Br"
-      ],
-      "products": [
-        "NaBr"
-      ],
-      "type": "ionic"
-    },
-    {
-      "reactants": [
-        "Na",
+        "Li",
         "I"
       ],
       "products": [
-        "NaI"
+        "LiI"
       ],
-      "type": "ionic"
+      "type": "binary_ionic"
     },
     {
       "reactants": [
-        "K",
-        "F"
-      ],
-      "products": [
-        "KF"
-      ],
-      "type": "ionic"
-    },
-    {
-      "reactants": [
-        "K",
-        "Cl"
-      ],
-      "products": [
-        "KCl"
-      ],
-      "type": "ionic"
-    },
-    {
-      "reactants": [
-        "K",
-        "Br"
-      ],
-      "products": [
-        "KBr"
-      ],
-      "type": "ionic"
-    },
-    {
-      "reactants": [
-        "K",
+        "Li",
         "I"
       ],
       "products": [
-        "KI"
+        "LiI"
       ],
-      "type": "ionic"
-    },
-    {
-      "reactants": [
-        "Rb",
-        "F"
-      ],
-      "products": [
-        "RbF"
-      ],
-      "type": "ionic"
-    },
-    {
-      "reactants": [
-        "Rb",
-        "Cl"
-      ],
-      "products": [
-        "RbCl"
-      ],
-      "type": "ionic"
-    },
-    {
-      "reactants": [
-        "Rb",
-        "Br"
-      ],
-      "products": [
-        "RbBr"
-      ],
-      "type": "ionic"
-    },
-    {
-      "reactants": [
-        "Rb",
-        "I"
-      ],
-      "products": [
-        "RbI"
-      ],
-      "type": "ionic"
-    },
-    {
-      "reactants": [
-        "Cs",
-        "F"
-      ],
-      "products": [
-        "CsF"
-      ],
-      "type": "ionic"
-    },
-    {
-      "reactants": [
-        "Cs",
-        "Cl"
-      ],
-      "products": [
-        "CsCl"
-      ],
-      "type": "ionic"
-    },
-    {
-      "reactants": [
-        "Cs",
-        "Br"
-      ],
-      "products": [
-        "CsBr"
-      ],
-      "type": "ionic"
-    },
-    {
-      "reactants": [
-        "Cs",
-        "I"
-      ],
-      "products": [
-        "CsI"
-      ],
-      "type": "ionic"
+      "type": "binary_ionic"
     },
     {
       "reactants": [
@@ -278,6 +3988,192 @@
       ],
       "products": [
         "Li2O"
+      ],
+      "type": "oxide"
+    },
+    {
+      "reactants": [
+        "Li",
+        "Li",
+        "O"
+      ],
+      "products": [
+        "Li2O"
+      ],
+      "type": "oxide"
+    },
+    {
+      "reactants": [
+        "Li",
+        "Li",
+        "O"
+      ],
+      "products": [
+        "Li2O"
+      ],
+      "type": "oxide"
+    },
+    {
+      "reactants": [
+        "Li",
+        "Li",
+        "S"
+      ],
+      "products": [
+        "Li2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "Li",
+        "Li",
+        "S"
+      ],
+      "products": [
+        "Li2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "Li",
+        "Li",
+        "S"
+      ],
+      "products": [
+        "Li2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "Na",
+        "F"
+      ],
+      "products": [
+        "NaF"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Na",
+        "F"
+      ],
+      "products": [
+        "NaF"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Na",
+        "F"
+      ],
+      "products": [
+        "NaF"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Na",
+        "Cl"
+      ],
+      "products": [
+        "NaCl"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Na",
+        "Cl"
+      ],
+      "products": [
+        "NaCl"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Na",
+        "Cl"
+      ],
+      "products": [
+        "NaCl"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Na",
+        "Br"
+      ],
+      "products": [
+        "NaBr"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Na",
+        "Br"
+      ],
+      "products": [
+        "NaBr"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Na",
+        "Br"
+      ],
+      "products": [
+        "NaBr"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Na",
+        "I"
+      ],
+      "products": [
+        "NaI"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Na",
+        "I"
+      ],
+      "products": [
+        "NaI"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Na",
+        "I"
+      ],
+      "products": [
+        "NaI"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Na",
+        "Na",
+        "O"
+      ],
+      "products": [
+        "Na2O"
       ],
       "type": "oxide"
     },
@@ -294,12 +4190,362 @@
     },
     {
       "reactants": [
+        "Na",
+        "Na",
+        "O"
+      ],
+      "products": [
+        "Na2O"
+      ],
+      "type": "oxide"
+    },
+    {
+      "reactants": [
+        "Na",
+        "Na",
+        "S"
+      ],
+      "products": [
+        "Na2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "Na",
+        "Na",
+        "S"
+      ],
+      "products": [
+        "Na2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "Na",
+        "Na",
+        "S"
+      ],
+      "products": [
+        "Na2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "K",
+        "F"
+      ],
+      "products": [
+        "KF"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "K",
+        "F"
+      ],
+      "products": [
+        "KF"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "K",
+        "F"
+      ],
+      "products": [
+        "KF"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "K",
+        "Cl"
+      ],
+      "products": [
+        "KCl"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "K",
+        "Cl"
+      ],
+      "products": [
+        "KCl"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "K",
+        "Cl"
+      ],
+      "products": [
+        "KCl"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "K",
+        "Br"
+      ],
+      "products": [
+        "KBr"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "K",
+        "Br"
+      ],
+      "products": [
+        "KBr"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "K",
+        "Br"
+      ],
+      "products": [
+        "KBr"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "K",
+        "I"
+      ],
+      "products": [
+        "KI"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "K",
+        "I"
+      ],
+      "products": [
+        "KI"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "K",
+        "I"
+      ],
+      "products": [
+        "KI"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
         "K",
         "K",
         "O"
       ],
       "products": [
         "K2O"
+      ],
+      "type": "oxide"
+    },
+    {
+      "reactants": [
+        "K",
+        "K",
+        "O"
+      ],
+      "products": [
+        "K2O"
+      ],
+      "type": "oxide"
+    },
+    {
+      "reactants": [
+        "K",
+        "K",
+        "O"
+      ],
+      "products": [
+        "K2O"
+      ],
+      "type": "oxide"
+    },
+    {
+      "reactants": [
+        "K",
+        "K",
+        "S"
+      ],
+      "products": [
+        "K2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "K",
+        "K",
+        "S"
+      ],
+      "products": [
+        "K2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "K",
+        "K",
+        "S"
+      ],
+      "products": [
+        "K2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "Rb",
+        "F"
+      ],
+      "products": [
+        "RbF"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Rb",
+        "F"
+      ],
+      "products": [
+        "RbF"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Rb",
+        "F"
+      ],
+      "products": [
+        "RbF"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Rb",
+        "Cl"
+      ],
+      "products": [
+        "RbCl"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Rb",
+        "Cl"
+      ],
+      "products": [
+        "RbCl"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Rb",
+        "Cl"
+      ],
+      "products": [
+        "RbCl"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Rb",
+        "Br"
+      ],
+      "products": [
+        "RbBr"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Rb",
+        "Br"
+      ],
+      "products": [
+        "RbBr"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Rb",
+        "Br"
+      ],
+      "products": [
+        "RbBr"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Rb",
+        "I"
+      ],
+      "products": [
+        "RbI"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Rb",
+        "I"
+      ],
+      "products": [
+        "RbI"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Rb",
+        "I"
+      ],
+      "products": [
+        "RbI"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Rb",
+        "Rb",
+        "O"
+      ],
+      "products": [
+        "Rb2O"
       ],
       "type": "oxide"
     },
@@ -316,6 +4562,170 @@
     },
     {
       "reactants": [
+        "Rb",
+        "Rb",
+        "O"
+      ],
+      "products": [
+        "Rb2O"
+      ],
+      "type": "oxide"
+    },
+    {
+      "reactants": [
+        "Rb",
+        "Rb",
+        "S"
+      ],
+      "products": [
+        "Rb2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "Rb",
+        "Rb",
+        "S"
+      ],
+      "products": [
+        "Rb2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "Rb",
+        "Rb",
+        "S"
+      ],
+      "products": [
+        "Rb2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "Cs",
+        "F"
+      ],
+      "products": [
+        "CsF"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cs",
+        "F"
+      ],
+      "products": [
+        "CsF"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cs",
+        "F"
+      ],
+      "products": [
+        "CsF"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cs",
+        "Cl"
+      ],
+      "products": [
+        "CsCl"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cs",
+        "Cl"
+      ],
+      "products": [
+        "CsCl"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cs",
+        "Cl"
+      ],
+      "products": [
+        "CsCl"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cs",
+        "Br"
+      ],
+      "products": [
+        "CsBr"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cs",
+        "Br"
+      ],
+      "products": [
+        "CsBr"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cs",
+        "Br"
+      ],
+      "products": [
+        "CsBr"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cs",
+        "I"
+      ],
+      "products": [
+        "CsI"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cs",
+        "I"
+      ],
+      "products": [
+        "CsI"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cs",
+        "I"
+      ],
+      "products": [
+        "CsI"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
         "Cs",
         "Cs",
         "O"
@@ -327,13 +4737,382 @@
     },
     {
       "reactants": [
+        "Cs",
+        "Cs",
+        "O"
+      ],
+      "products": [
+        "Cs2O"
+      ],
+      "type": "oxide"
+    },
+    {
+      "reactants": [
+        "Cs",
+        "Cs",
+        "O"
+      ],
+      "products": [
+        "Cs2O"
+      ],
+      "type": "oxide"
+    },
+    {
+      "reactants": [
+        "Cs",
+        "Cs",
+        "S"
+      ],
+      "products": [
+        "Cs2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "Cs",
+        "Cs",
+        "S"
+      ],
+      "products": [
+        "Cs2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "Cs",
+        "Cs",
+        "S"
+      ],
+      "products": [
+        "Cs2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "Mg",
+        "F",
+        "F"
+      ],
+      "products": [
+        "MgF2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Mg",
+        "F",
+        "F"
+      ],
+      "products": [
+        "MgF2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Mg",
+        "F",
+        "F"
+      ],
+      "products": [
+        "MgF2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Mg",
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "MgCl2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Mg",
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "MgCl2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Mg",
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "MgCl2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Mg",
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "MgBr2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Mg",
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "MgBr2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Mg",
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "MgBr2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Mg",
+        "I",
+        "I"
+      ],
+      "products": [
+        "MgI2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Mg",
+        "I",
+        "I"
+      ],
+      "products": [
+        "MgI2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Mg",
+        "I",
+        "I"
+      ],
+      "products": [
+        "MgI2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
         "Mg",
         "O"
       ],
       "products": [
         "MgO"
       ],
-      "type": "oxide"
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Mg",
+        "O"
+      ],
+      "products": [
+        "MgO"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Mg",
+        "O"
+      ],
+      "products": [
+        "MgO"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Mg",
+        "S"
+      ],
+      "products": [
+        "MgS"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Mg",
+        "S"
+      ],
+      "products": [
+        "MgS"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Mg",
+        "S"
+      ],
+      "products": [
+        "MgS"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ca",
+        "F",
+        "F"
+      ],
+      "products": [
+        "CaF2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ca",
+        "F",
+        "F"
+      ],
+      "products": [
+        "CaF2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ca",
+        "F",
+        "F"
+      ],
+      "products": [
+        "CaF2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ca",
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "CaCl2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ca",
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "CaCl2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ca",
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "CaCl2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ca",
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "CaBr2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ca",
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "CaBr2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ca",
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "CaBr2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ca",
+        "I",
+        "I"
+      ],
+      "products": [
+        "CaI2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ca",
+        "I",
+        "I"
+      ],
+      "products": [
+        "CaI2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ca",
+        "I",
+        "I"
+      ],
+      "products": [
+        "CaI2"
+      ],
+      "type": "binary_ionic"
     },
     {
       "reactants": [
@@ -343,7 +5122,189 @@
       "products": [
         "CaO"
       ],
-      "type": "oxide"
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ca",
+        "O"
+      ],
+      "products": [
+        "CaO"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ca",
+        "O"
+      ],
+      "products": [
+        "CaO"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ca",
+        "S"
+      ],
+      "products": [
+        "CaS"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ca",
+        "S"
+      ],
+      "products": [
+        "CaS"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ca",
+        "S"
+      ],
+      "products": [
+        "CaS"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Sr",
+        "F",
+        "F"
+      ],
+      "products": [
+        "SrF2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Sr",
+        "F",
+        "F"
+      ],
+      "products": [
+        "SrF2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Sr",
+        "F",
+        "F"
+      ],
+      "products": [
+        "SrF2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Sr",
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "SrCl2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Sr",
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "SrCl2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Sr",
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "SrCl2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Sr",
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "SrBr2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Sr",
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "SrBr2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Sr",
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "SrBr2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Sr",
+        "I",
+        "I"
+      ],
+      "products": [
+        "SrI2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Sr",
+        "I",
+        "I"
+      ],
+      "products": [
+        "SrI2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Sr",
+        "I",
+        "I"
+      ],
+      "products": [
+        "SrI2"
+      ],
+      "type": "binary_ionic"
     },
     {
       "reactants": [
@@ -353,7 +5314,189 @@
       "products": [
         "SrO"
       ],
-      "type": "oxide"
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Sr",
+        "O"
+      ],
+      "products": [
+        "SrO"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Sr",
+        "O"
+      ],
+      "products": [
+        "SrO"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Sr",
+        "S"
+      ],
+      "products": [
+        "SrS"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Sr",
+        "S"
+      ],
+      "products": [
+        "SrS"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Sr",
+        "S"
+      ],
+      "products": [
+        "SrS"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ba",
+        "F",
+        "F"
+      ],
+      "products": [
+        "BaF2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ba",
+        "F",
+        "F"
+      ],
+      "products": [
+        "BaF2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ba",
+        "F",
+        "F"
+      ],
+      "products": [
+        "BaF2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ba",
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "BaCl2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ba",
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "BaCl2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ba",
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "BaCl2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ba",
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "BaBr2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ba",
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "BaBr2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ba",
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "BaBr2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ba",
+        "I",
+        "I"
+      ],
+      "products": [
+        "BaI2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ba",
+        "I",
+        "I"
+      ],
+      "products": [
+        "BaI2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ba",
+        "I",
+        "I"
+      ],
+      "products": [
+        "BaI2"
+      ],
+      "type": "binary_ionic"
     },
     {
       "reactants": [
@@ -363,7 +5506,621 @@
       "products": [
         "BaO"
       ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ba",
+        "O"
+      ],
+      "products": [
+        "BaO"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ba",
+        "O"
+      ],
+      "products": [
+        "BaO"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ba",
+        "S"
+      ],
+      "products": [
+        "BaS"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ba",
+        "S"
+      ],
+      "products": [
+        "BaS"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ba",
+        "S"
+      ],
+      "products": [
+        "BaS"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Zn",
+        "F",
+        "F"
+      ],
+      "products": [
+        "ZnF2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Zn",
+        "F",
+        "F"
+      ],
+      "products": [
+        "ZnF2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Zn",
+        "F",
+        "F"
+      ],
+      "products": [
+        "ZnF2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Zn",
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "ZnCl2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Zn",
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "ZnCl2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Zn",
+        "Cl",
+        "Cl"
+      ],
+      "products": [
+        "ZnCl2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Zn",
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "ZnBr2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Zn",
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "ZnBr2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Zn",
+        "Br",
+        "Br"
+      ],
+      "products": [
+        "ZnBr2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Zn",
+        "I",
+        "I"
+      ],
+      "products": [
+        "ZnI2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Zn",
+        "I",
+        "I"
+      ],
+      "products": [
+        "ZnI2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Zn",
+        "I",
+        "I"
+      ],
+      "products": [
+        "ZnI2"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Zn",
+        "O"
+      ],
+      "products": [
+        "ZnO"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Zn",
+        "O"
+      ],
+      "products": [
+        "ZnO"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Zn",
+        "O"
+      ],
+      "products": [
+        "ZnO"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Zn",
+        "S"
+      ],
+      "products": [
+        "ZnS"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Zn",
+        "S"
+      ],
+      "products": [
+        "ZnS"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Zn",
+        "S"
+      ],
+      "products": [
+        "ZnS"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cu",
+        "F"
+      ],
+      "products": [
+        "CuF"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cu",
+        "F"
+      ],
+      "products": [
+        "CuF"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cu",
+        "F"
+      ],
+      "products": [
+        "CuF"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cu",
+        "Cl"
+      ],
+      "products": [
+        "CuCl"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cu",
+        "Cl"
+      ],
+      "products": [
+        "CuCl"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cu",
+        "Cl"
+      ],
+      "products": [
+        "CuCl"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cu",
+        "Br"
+      ],
+      "products": [
+        "CuBr"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cu",
+        "Br"
+      ],
+      "products": [
+        "CuBr"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cu",
+        "Br"
+      ],
+      "products": [
+        "CuBr"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cu",
+        "I"
+      ],
+      "products": [
+        "CuI"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cu",
+        "I"
+      ],
+      "products": [
+        "CuI"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cu",
+        "I"
+      ],
+      "products": [
+        "CuI"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Cu",
+        "Cu",
+        "O"
+      ],
+      "products": [
+        "Cu2O"
+      ],
       "type": "oxide"
+    },
+    {
+      "reactants": [
+        "Cu",
+        "Cu",
+        "O"
+      ],
+      "products": [
+        "Cu2O"
+      ],
+      "type": "oxide"
+    },
+    {
+      "reactants": [
+        "Cu",
+        "Cu",
+        "O"
+      ],
+      "products": [
+        "Cu2O"
+      ],
+      "type": "oxide"
+    },
+    {
+      "reactants": [
+        "Cu",
+        "Cu",
+        "S"
+      ],
+      "products": [
+        "Cu2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "Cu",
+        "Cu",
+        "S"
+      ],
+      "products": [
+        "Cu2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "Cu",
+        "Cu",
+        "S"
+      ],
+      "products": [
+        "Cu2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "Ag",
+        "F"
+      ],
+      "products": [
+        "AgF"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ag",
+        "F"
+      ],
+      "products": [
+        "AgF"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ag",
+        "F"
+      ],
+      "products": [
+        "AgF"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ag",
+        "Cl"
+      ],
+      "products": [
+        "AgCl"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ag",
+        "Cl"
+      ],
+      "products": [
+        "AgCl"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ag",
+        "Cl"
+      ],
+      "products": [
+        "AgCl"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ag",
+        "Br"
+      ],
+      "products": [
+        "AgBr"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ag",
+        "Br"
+      ],
+      "products": [
+        "AgBr"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ag",
+        "Br"
+      ],
+      "products": [
+        "AgBr"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ag",
+        "I"
+      ],
+      "products": [
+        "AgI"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ag",
+        "I"
+      ],
+      "products": [
+        "AgI"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ag",
+        "I"
+      ],
+      "products": [
+        "AgI"
+      ],
+      "type": "binary_ionic"
+    },
+    {
+      "reactants": [
+        "Ag",
+        "Ag",
+        "O"
+      ],
+      "products": [
+        "Ag2O"
+      ],
+      "type": "oxide"
+    },
+    {
+      "reactants": [
+        "Ag",
+        "Ag",
+        "O"
+      ],
+      "products": [
+        "Ag2O"
+      ],
+      "type": "oxide"
+    },
+    {
+      "reactants": [
+        "Ag",
+        "Ag",
+        "O"
+      ],
+      "products": [
+        "Ag2O"
+      ],
+      "type": "oxide"
+    },
+    {
+      "reactants": [
+        "Ag",
+        "Ag",
+        "S"
+      ],
+      "products": [
+        "Ag2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "Ag",
+        "Ag",
+        "S"
+      ],
+      "products": [
+        "Ag2S"
+      ],
+      "type": "sulfide"
+    },
+    {
+      "reactants": [
+        "Ag",
+        "Ag",
+        "S"
+      ],
+      "products": [
+        "Ag2S"
+      ],
+      "type": "sulfide"
     },
     {
       "reactants": [
@@ -373,7 +6130,87 @@
       "products": [
         "HF"
       ],
-      "type": "acid"
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "F"
+      ],
+      "products": [
+        "HF"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "F"
+      ],
+      "products": [
+        "HF"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "F"
+      ],
+      "products": [
+        "HF"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "F"
+      ],
+      "products": [
+        "HF"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "F"
+      ],
+      "products": [
+        "HF"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "F"
+      ],
+      "products": [
+        "HF"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "F"
+      ],
+      "products": [
+        "HF"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "F"
+      ],
+      "products": [
+        "HF"
+      ],
+      "type": "hydrogen_halide"
     },
     {
       "reactants": [
@@ -383,7 +6220,87 @@
       "products": [
         "HCl"
       ],
-      "type": "acid"
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "Cl"
+      ],
+      "products": [
+        "HCl"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "Cl"
+      ],
+      "products": [
+        "HCl"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "Cl"
+      ],
+      "products": [
+        "HCl"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "Cl"
+      ],
+      "products": [
+        "HCl"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "Cl"
+      ],
+      "products": [
+        "HCl"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "Cl"
+      ],
+      "products": [
+        "HCl"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "Cl"
+      ],
+      "products": [
+        "HCl"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "Cl"
+      ],
+      "products": [
+        "HCl"
+      ],
+      "type": "hydrogen_halide"
     },
     {
       "reactants": [
@@ -393,7 +6310,87 @@
       "products": [
         "HBr"
       ],
-      "type": "acid"
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "Br"
+      ],
+      "products": [
+        "HBr"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "Br"
+      ],
+      "products": [
+        "HBr"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "Br"
+      ],
+      "products": [
+        "HBr"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "Br"
+      ],
+      "products": [
+        "HBr"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "Br"
+      ],
+      "products": [
+        "HBr"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "Br"
+      ],
+      "products": [
+        "HBr"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "Br"
+      ],
+      "products": [
+        "HBr"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "Br"
+      ],
+      "products": [
+        "HBr"
+      ],
+      "type": "hydrogen_halide"
     },
     {
       "reactants": [
@@ -403,7 +6400,87 @@
       "products": [
         "HI"
       ],
-      "type": "acid"
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "I"
+      ],
+      "products": [
+        "HI"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "I"
+      ],
+      "products": [
+        "HI"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "I"
+      ],
+      "products": [
+        "HI"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "I"
+      ],
+      "products": [
+        "HI"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "I"
+      ],
+      "products": [
+        "HI"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "I"
+      ],
+      "products": [
+        "HI"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "I"
+      ],
+      "products": [
+        "HI"
+      ],
+      "type": "hydrogen_halide"
+    },
+    {
+      "reactants": [
+        "H",
+        "I"
+      ],
+      "products": [
+        "HI"
+      ],
+      "type": "hydrogen_halide"
     },
     {
       "reactants": [
@@ -462,121 +6539,278 @@
     },
     {
       "reactants": [
-        "N",
         "H",
         "H",
-        "H"
-      ],
-      "products": [
-        "NH3"
-      ],
-      "type": "ammonia"
-    },
-    {
-      "reactants": [
-        "N",
-        "H",
-        "H",
-        "H"
-      ],
-      "products": [
-        "NH3"
-      ],
-      "type": "ammonia"
-    },
-    {
-      "reactants": [
-        "N",
-        "H",
-        "H",
-        "H"
-      ],
-      "products": [
-        "NH3"
-      ],
-      "type": "ammonia"
-    },
-    {
-      "reactants": [
-        "C",
-        "H",
-        "H",
-        "H",
-        "H"
-      ],
-      "products": [
-        "CH4"
-      ],
-      "type": "methane"
-    },
-    {
-      "reactants": [
-        "C",
-        "H",
-        "H",
-        "H",
-        "H"
-      ],
-      "products": [
-        "CH4"
-      ],
-      "type": "methane"
-    },
-    {
-      "reactants": [
-        "C",
-        "H",
-        "H",
-        "H",
-        "H"
-      ],
-      "products": [
-        "CH4"
-      ],
-      "type": "methane"
-    },
-    {
-      "reactants": [
-        "C",
         "O"
       ],
       "products": [
-        "CO"
+        "H2O"
       ],
-      "type": "oxide"
+      "type": "water"
     },
     {
       "reactants": [
-        "C",
-        "O",
+        "H",
+        "H",
         "O"
       ],
       "products": [
-        "CO2"
+        "H2O"
       ],
-      "type": "oxide"
+      "type": "water"
     },
     {
       "reactants": [
-        "C",
-        "O",
+        "H",
+        "H",
         "O"
       ],
       "products": [
-        "CO2"
+        "H2O"
       ],
-      "type": "oxide"
+      "type": "water"
     },
     {
       "reactants": [
-        "C",
-        "O",
+        "H",
+        "H",
         "O"
       ],
       "products": [
-        "CO2"
+        "H2O"
       ],
-      "type": "oxide"
+      "type": "water"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "water"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "water"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "water"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "water"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "water"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "water"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "water"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "water"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "water"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "water"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "water"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "water"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "water"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "water"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "water"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "water"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "water"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "water"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "water"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "water"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "O"
+      ],
+      "products": [
+        "H2O"
+      ],
+      "type": "water"
     },
     {
       "reactants": [
@@ -587,7 +6821,1019 @@
       "products": [
         "H2S"
       ],
-      "type": "sulfide"
+      "type": "hydrogen_sulfide"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "S"
+      ],
+      "products": [
+        "H2S"
+      ],
+      "type": "hydrogen_sulfide"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "S"
+      ],
+      "products": [
+        "H2S"
+      ],
+      "type": "hydrogen_sulfide"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "S"
+      ],
+      "products": [
+        "H2S"
+      ],
+      "type": "hydrogen_sulfide"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "S"
+      ],
+      "products": [
+        "H2S"
+      ],
+      "type": "hydrogen_sulfide"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "S"
+      ],
+      "products": [
+        "H2S"
+      ],
+      "type": "hydrogen_sulfide"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "S"
+      ],
+      "products": [
+        "H2S"
+      ],
+      "type": "hydrogen_sulfide"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "S"
+      ],
+      "products": [
+        "H2S"
+      ],
+      "type": "hydrogen_sulfide"
+    },
+    {
+      "reactants": [
+        "H",
+        "H",
+        "S"
+      ],
+      "products": [
+        "H2S"
+      ],
+      "type": "hydrogen_sulfide"
+    },
+    {
+      "reactants": [
+        "N",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "NH3"
+      ],
+      "type": "ammonia"
+    },
+    {
+      "reactants": [
+        "N",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "NH3"
+      ],
+      "type": "ammonia"
+    },
+    {
+      "reactants": [
+        "N",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "NH3"
+      ],
+      "type": "ammonia"
+    },
+    {
+      "reactants": [
+        "N",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "NH3"
+      ],
+      "type": "ammonia"
+    },
+    {
+      "reactants": [
+        "N",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "NH3"
+      ],
+      "type": "ammonia"
+    },
+    {
+      "reactants": [
+        "N",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "NH3"
+      ],
+      "type": "ammonia"
+    },
+    {
+      "reactants": [
+        "N",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "NH3"
+      ],
+      "type": "ammonia"
+    },
+    {
+      "reactants": [
+        "N",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "NH3"
+      ],
+      "type": "ammonia"
+    },
+    {
+      "reactants": [
+        "N",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "NH3"
+      ],
+      "type": "ammonia"
+    },
+    {
+      "reactants": [
+        "N",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "NH3"
+      ],
+      "type": "ammonia"
+    },
+    {
+      "reactants": [
+        "N",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "NH3"
+      ],
+      "type": "ammonia"
+    },
+    {
+      "reactants": [
+        "N",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "NH3"
+      ],
+      "type": "ammonia"
+    },
+    {
+      "reactants": [
+        "N",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "NH3"
+      ],
+      "type": "ammonia"
+    },
+    {
+      "reactants": [
+        "N",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "NH3"
+      ],
+      "type": "ammonia"
+    },
+    {
+      "reactants": [
+        "N",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "NH3"
+      ],
+      "type": "ammonia"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "type": "methane"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O",
+        "O"
+      ],
+      "products": [
+        "CO2"
+      ],
+      "type": "carbon_dioxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O"
+      ],
+      "products": [
+        "CO"
+      ],
+      "type": "carbon_monoxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O"
+      ],
+      "products": [
+        "CO"
+      ],
+      "type": "carbon_monoxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O"
+      ],
+      "products": [
+        "CO"
+      ],
+      "type": "carbon_monoxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O"
+      ],
+      "products": [
+        "CO"
+      ],
+      "type": "carbon_monoxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O"
+      ],
+      "products": [
+        "CO"
+      ],
+      "type": "carbon_monoxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O"
+      ],
+      "products": [
+        "CO"
+      ],
+      "type": "carbon_monoxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O"
+      ],
+      "products": [
+        "CO"
+      ],
+      "type": "carbon_monoxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O"
+      ],
+      "products": [
+        "CO"
+      ],
+      "type": "carbon_monoxide"
+    },
+    {
+      "reactants": [
+        "C",
+        "O"
+      ],
+      "products": [
+        "CO"
+      ],
+      "type": "carbon_monoxide"
     },
     {
       "reactants": [
@@ -598,9 +7844,224 @@
       "products": [
         "SO2"
       ],
-      "type": "oxide"
+      "type": "sulfur_dioxide"
+    },
+    {
+      "reactants": [
+        "S",
+        "O",
+        "O"
+      ],
+      "products": [
+        "SO2"
+      ],
+      "type": "sulfur_dioxide"
+    },
+    {
+      "reactants": [
+        "S",
+        "O",
+        "O"
+      ],
+      "products": [
+        "SO2"
+      ],
+      "type": "sulfur_dioxide"
+    },
+    {
+      "reactants": [
+        "S",
+        "O",
+        "O"
+      ],
+      "products": [
+        "SO2"
+      ],
+      "type": "sulfur_dioxide"
+    },
+    {
+      "reactants": [
+        "S",
+        "O",
+        "O"
+      ],
+      "products": [
+        "SO2"
+      ],
+      "type": "sulfur_dioxide"
+    },
+    {
+      "reactants": [
+        "S",
+        "O",
+        "O"
+      ],
+      "products": [
+        "SO2"
+      ],
+      "type": "sulfur_dioxide"
+    },
+    {
+      "reactants": [
+        "S",
+        "O",
+        "O"
+      ],
+      "products": [
+        "SO2"
+      ],
+      "type": "sulfur_dioxide"
+    },
+    {
+      "reactants": [
+        "S",
+        "O",
+        "O"
+      ],
+      "products": [
+        "SO2"
+      ],
+      "type": "sulfur_dioxide"
+    },
+    {
+      "reactants": [
+        "S",
+        "O",
+        "O"
+      ],
+      "products": [
+        "SO2"
+      ],
+      "type": "sulfur_dioxide"
+    },
+    {
+      "reactants": [
+        "N",
+        "O"
+      ],
+      "products": [
+        "NO"
+      ],
+      "type": "nitrogen_oxide"
+    },
+    {
+      "reactants": [
+        "N",
+        "O"
+      ],
+      "products": [
+        "NO"
+      ],
+      "type": "nitrogen_oxide"
+    },
+    {
+      "reactants": [
+        "N",
+        "O"
+      ],
+      "products": [
+        "NO"
+      ],
+      "type": "nitrogen_oxide"
+    },
+    {
+      "reactants": [
+        "N",
+        "O"
+      ],
+      "products": [
+        "NO"
+      ],
+      "type": "nitrogen_oxide"
+    },
+    {
+      "reactants": [
+        "N",
+        "O"
+      ],
+      "products": [
+        "NO"
+      ],
+      "type": "nitrogen_oxide"
+    },
+    {
+      "reactants": [
+        "N",
+        "O"
+      ],
+      "products": [
+        "NO"
+      ],
+      "type": "nitrogen_oxide"
+    },
+    {
+      "reactants": [
+        "N",
+        "O",
+        "O"
+      ],
+      "products": [
+        "NO2"
+      ],
+      "type": "nitrogen_dioxide"
+    },
+    {
+      "reactants": [
+        "N",
+        "O",
+        "O"
+      ],
+      "products": [
+        "NO2"
+      ],
+      "type": "nitrogen_dioxide"
+    },
+    {
+      "reactants": [
+        "N",
+        "O",
+        "O"
+      ],
+      "products": [
+        "NO2"
+      ],
+      "type": "nitrogen_dioxide"
+    },
+    {
+      "reactants": [
+        "N",
+        "O",
+        "O"
+      ],
+      "products": [
+        "NO2"
+      ],
+      "type": "nitrogen_dioxide"
+    },
+    {
+      "reactants": [
+        "N",
+        "O",
+        "O"
+      ],
+      "products": [
+        "NO2"
+      ],
+      "type": "nitrogen_dioxide"
+    },
+    {
+      "reactants": [
+        "N",
+        "O",
+        "O"
+      ],
+      "products": [
+        "NO2"
+      ],
+      "type": "nitrogen_dioxide"
     }
   ],
-  "count": 57,
-  "source": "simplified_high_confidence_reactions"
+  "count": 615,
+  "unique_products": 142,
+  "source": "comprehensive_organic_inorganic_dataset"
 }

@@ -26,7 +26,7 @@ class ReactionMLModel:
         self.idx_to_product = {}
         
     def _featurize_reactants(self, reactants: List[str]) -> np.ndarray:
-        """Convert reactant list to feature vector"""
+        """Convert reactant list to feature vector with better discrimination"""
         # Count each element
         elem_counts = Counter(reactants)
         
@@ -36,19 +36,42 @@ class ReactionMLModel:
             if elem in self.element_to_idx:
                 features[self.element_to_idx[elem]] = count
         
-        # Additional features
+        # Additional features for better discrimination
         total_atoms = len(reactants)
         num_unique = len(elem_counts)
         
-        # Add aggregate features
+        # Ratios and signatures
+        h_count = elem_counts.get('H', 0)
+        c_count = elem_counts.get('C', 0)
+        o_count = elem_counts.get('O', 0)
+        n_count = elem_counts.get('N', 0)
+        
+        # Binary indicators
+        is_diatomic = (total_atoms == 2 and num_unique == 1)
+        is_hydrocarbon = (set(elem_counts.keys()) <= {'C', 'H'})
+        has_metal = any(m in elem_counts for m in ['Li','Na','K','Rb','Cs','Mg','Ca','Sr','Ba','Al','Zn','Fe','Cu','Ag'])
+        has_halogen = any(h in elem_counts for h in ['F','Cl','Br','I'])
+        
+        # Ratios (avoid divide by zero)
+        h_to_c = h_count / max(c_count, 1)
+        o_to_c = o_count / max(c_count, 1)
+        total_heavy = total_atoms - h_count
+        
+        # Add comprehensive features
         extra_features = [
             total_atoms,
             num_unique,
-            max(elem_counts.values()),  # max count of any element
-            1 if 'H' in elem_counts else 0,
-            1 if 'O' in elem_counts else 0,
-            1 if 'C' in elem_counts else 0,
-            1 if 'N' in elem_counts else 0,
+            max(elem_counts.values()),
+            h_count, c_count, o_count, n_count,
+            h_to_c, o_to_c,
+            total_heavy,
+            float(is_diatomic),
+            float(is_hydrocarbon),
+            float(has_metal),
+            float(has_halogen),
+            float(total_atoms <= 3),  # Small molecule
+            float(c_count > 0),  # Organic
+            float(total_atoms > 10),  # Large molecule
         ]
         
         return np.concatenate([features, extra_features])
