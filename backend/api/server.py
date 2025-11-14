@@ -109,12 +109,10 @@ def predict_reaction():
         print(f"Predicting reaction for: {elements}")
         print(f"{'='*50}")
         
-        # Step 1: Run quantum calculations (Python → MATLAB → Python)
-        print("\nStep 1: Running quantum calculations...")
-        quantum_data = matlab_bridge.calculate_molecule_properties(elements, geometry)
+        # Step 1: Try hierarchical predictor FIRST (instant for most reactions)
+        print("\nStep 1: Checking ML database...")
+        quantum_data = None  # Skip quantum by default
         
-        # Step 2: Use hierarchical predictor (4-level ensemble)
-        print("\nStep 2: Using hierarchical predictor...")
         if hierarchical_predictor:
             # Hierarchical predictor handles routing automatically
             prediction_result = hierarchical_predictor.predict(elements, quantum_data)
@@ -140,14 +138,15 @@ def predict_reaction():
         response = {
             'input_elements': elements,
             'quantum_data': {
-                'vqe_energy': quantum_data.get('vqe_energy'),
-                'hf_energy': quantum_data.get('hf_energy'),
-                'energy_improvement': quantum_data.get('energy_improvement'),
-                'num_electrons': quantum_data.get('num_electrons'),
-                'num_qubits': quantum_data.get('num_qubits'),
-                'bond_lengths': quantum_data.get('bond_lengths'),
-                'orbital_occupations': quantum_data.get('orbital_occupations'),
-                'mo_energies': quantum_data.get('mo_energies')
+                'vqe_energy': quantum_data.get('vqe_energy') if quantum_data else None,
+                'hf_energy': quantum_data.get('hf_energy') if quantum_data else None,
+                'energy_improvement': quantum_data.get('energy_improvement') if quantum_data else None,
+                'num_electrons': quantum_data.get('num_electrons') if quantum_data else None,
+                'num_qubits': quantum_data.get('num_qubits') if quantum_data else None,
+                'bond_lengths': quantum_data.get('bond_lengths') if quantum_data else None,
+                'orbital_occupations': quantum_data.get('orbital_occupations') if quantum_data else None,
+                'mo_energies': quantum_data.get('mo_energies') if quantum_data else None,
+                'skipped': True if not quantum_data else False
             },
             'ai_prediction': ai_prediction,
             'success': True
